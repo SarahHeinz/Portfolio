@@ -84,6 +84,135 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+/*------------------- General Styles ---- */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+  color: #e2e3ed;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+margin: 0;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+  margin: 0;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.285;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+
+/* --------------- Base Header - Footer Styles ---------------------- */
+
+header, 
+footer {
+
+}
+
+/* --------------- Header Styles ---------------------- */
+header {
+
+}
+
+header .content-wrapper {
+
+}
+
+header nav {
+
+}
+
+header .home-title {
+
+}
+
+header h1 {
+
+}
+
+header h2 {
+
+}
+
+/* ---------------Mobile Styles - Homepage --------->
+
+
+/*footer*/
+
+footer {
+
+}
+
+footer .content-wrapper {
+
+}
+
+footer .contact-wrapper {
+
+}
+
+footer .contact-info-social {
+
+}
+
+footer .contact-title {
+
+}
+
+footer .social-icons {
+
+}
+
+footer .contact-info-social p {
+
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
