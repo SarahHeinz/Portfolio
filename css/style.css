@@ -39,7 +39,7 @@ html {
  */
 
 hr {
-  display: block;
+display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
@@ -85,138 +85,156 @@ textarea {
    ========================================================================== */
 
 
-/*------------------- General Styles ---- */
-html {
-  font-size: 16px;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  text-align: left;
-  color: black;
-}
-
-ul,
-ol {
-  list-style: none;
-  padding: 0;
-margin: 0;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
-  font-weight: 500;
+   html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    color: #e2e3ed;
+    text-align: left;
+    background-color: #202322;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+    padding: 0;
   margin: 0;
-}
 
-h3,
-h4 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.125em;
-  font-weight: 500;
-  margin: 20px 0;
-}
+  }
+  
+  a {
+    text-decoration: none;
+    color: #FFE8D6;
+  }
 
-p {
-  font-size: 0.875em;
-  line-height: 1.285;
-}
-
-img {
-  width: 100%;
-}
-
-figure {
-  margin: 0;
-}
-
-address {
-  font-style: normal;
-}
-
-.content-wrapper {
-  width: 90%;
-  margin: 50px 0;
-}
-
-
-/* --------------- Base Header - Footer Styles ---------------------- */
-
-header, 
-footer {
-
-}
-
-/* --------------- Header Styles ---------------------- */
-header {
-
-}
-
-header .content-wrapper {
-
-}
-
-header nav {
-
-}
-
-header .home-title {
-
-}
-
-header h1 {
-
-}
-
-header h2 {
-
-}
-
+  h3,
+  h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    margin: 20px 0;
+  }
+  
+  p {
+    font-size: .875em;
+    line-height: 1.285;
+  }
+  
+  img {
+    width: 100%;
+  }
+  .content-wrapper {
+    /* width: 90%; */
+    /* margin: 50px 0; */
+  }
 /* ---------------Mobile Styles - Homepage --------->
+/* ------------------------ HEADER ---------*/
 
+
+  header {
+    background: #453E4F;
+ padding-top: 20px;
+ padding-bottom: 40px;
+ display: flex;
+  flex-flow: row wrap;
+    justify-content: center;
+   text-align: center; 
+  }
+  
+header .content-wrapper {
+/* display: flex;
+justify-content: center;
+width: 85%;
+align-items: center;
+flex-flow: row wrap; */
+display: block;
+
+  }
+  
+header nav {
+    /* justify-content:center;
+width: 45%;
+margin-bottom: 40px;
+flex-flow: row wrap;
+align-items: center; */
+margin-bottom: 60px;
+display: block;
+  }
+  
+
+  header nav ul {
+    /* display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center; */
+
+    
+  }
+  header nav ul li {
+    /* display: flex;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  flex-flow: column wrap;
+  justify-content: space-between; */
+  font-size: .75rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  }
+  
+  header nav #contact-link {
+background-color: #ff7373;
+padding: 10px 10px;
+border-radius: 30px;
+  }
+
+  header .home-title {
+/* max-width: 95%;
+display: flex;
+flex-flow:row wrap;
+justify-content: center;
+align-items: center; */
+display: block;
+  }
+  
+  header h1 {
+  color: #f7be93;
+font-size: 1.75rem;
+line-height: 1.5;
+margin: 0;
+display: block;
+  }
+  
+
+  header h2 {
+    color: #FFE8D6;
+width: 100%;
+margin: 60px 0 0 0;
+   font-size: 1.5rem;
+  }
 
 /*footer*/
 
 footer {
-
+  background-color: #F19494;
 }
 
-footer .content-wrapper {
-
-}
-
-footer .contact-wrapper {
-
-}
-
-footer .contact-info-social {
-
-}
-
-footer .contact-title {
-
-}
-
-footer .social-icons {
-
-}
-
-footer .contact-info-social p {
-
-}
-
-footer script {
-
-}
 
 /* -------------------MAIN ---------------- */
+body {
+  background-color: #FFE8D6;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -382,101 +400,63 @@ footer script {
     page-break-after: avoid;
   }
 }
-
-
-/* ------------------------ MEDIA TABLET -------------- */
-
-@media only screen and (min-width: 768px) {
-
+@media only screen and (min-width:768px) {
   /*Tablet styles here*/
-
-   /* General styles */
-   /* General styles */
-  .content-wrapper {
-    max-width: 640px;
-    margin: 100px 0;
-  }
-
-
-  h2 {
-    font-size: 2.25em;
-    line-height: 1.333;
-    margin-bottom: 20px;
-  }
-
-  h3 {
-    font-size: 1.5em;
-    line-height: 1.25;
-  }
-
-  /* Header */
-
   header {
-    justify-content: space-around;
-    padding: 33px 0;
+    background: #453E4F;
+ padding-top: 50px;
+ padding-bottom: 140px;
+ display: flex;
+  flex-flow: row wrap;
+    justify-content: center;
+   text-align: center; 
   }
-
-  header .content-wrapper {
-    width: 100%;
-    justify-content: space-between;
+  
+header .content-wrapper {
+display: flex;
+justify-content: center;
+width: 85%;
+align-items: flex-end;
+flex-flow: column wrap;
   }
-
-  header figure {
-    width: 30%;
+  
+header nav {
+    justify-content: flex-end;
+width: 45%;
+margin-bottom: 50px;
   }
-
-  header nav {
-    width: 20%;
-
-  }
+  
 
   header nav ul {
-    justify-content: space-between;
+   
+ 
+    
   }
-
-  .header-divider {
-    display: none;
+  header nav ul li {
+    display: inline;
+  text-transform: uppercase;
+  margin-bottom: 20px;
   }
-
-
-  /* Footer */
-
-  footer .content-wrapper {
-    width: 65%;
-    margin: 100px 0;
+  
+  header .home-title {
+max-width: 95%;
+display: flex;
+flex-flow:row wrap;
+justify-content: center;
   }
-
-  footer h4 {
-    font-size: 1.5em;
-    margin-bottom: 40px;
+  
+  header h1 {
+  color: #FFE8D6;
+  width: 100%;
+font-size: 4rem;
+margin: 0;
   }
-
-  footer .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  footer .contact {
-    margin-bottom: 0;
-  }
-
-  footer .copyright {
-    width: 100%;
-  }
-
-  footer p {
-    line-height: 1.285;
-  }
-
-  footer .copyright {
-    width: 100%;
-  }
-
-  footer .social-icons {
-    width: 12.5em;
-    justify-content: space-between;
+  
+  header h2 {
+    color: #FFE8D6;
+width: 100%;
+margin: 40px 0 0 0;
+   font-size: 2rem;
   }
 
 
@@ -487,98 +467,60 @@ footer script {
 
   /*Desktop styles here*/
 
-  /* General Styles*/
+  /* ------------------------ HEADER ---------*/
   header {
-    padding: 15px 0;
+    background: #453E4F;
+ padding-top: 50px;
+ padding-bottom: 140px;
+ display: flex;
+  flex-flow: row wrap;
+    justify-content: center;
+   text-align: center; 
   }
-
-  .content-wrapper {
-    max-width: 960px;
+  
+header .content-wrapper {
+display: flex;
+justify-content: center;
+width: 85%;
+align-items: flex-end;
+flex-flow: column wrap;
   }
-
-
-  h2 {
-    font-size: 2.25em;
+  
+header nav {
+    justify-content: flex-end;
+width: 45%;
+margin-bottom: 50px;
   }
+  
 
-  h3,
-  h4 {
-    font-size: 1.875em;
+  header nav ul {
+   
+ 
+    
   }
-
-  p {
-    font-size: 1.125em;
-    line-height: 1.333;
+  header nav ul li {
+    display: inline;
+  text-transform: uppercase;
+  margin-bottom: 20px;
   }
-
-
-  /* /* 
-  @media print {
-
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+  
+  header .home-title {
+max-width: 95%;
+display: flex;
+flex-flow:row wrap;
+justify-content: center;
   }
-
-  a,
-  a:visited {
-    text-decoration: underline;
+  
+  header h1 {
+  color: #FFE8D6;
+  width: 100%;
+font-size: 4rem;
+margin: 0;
   }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
+  
+  header h2 {
+    color: #FFE8D6;
+width: 100%;
+margin: 40px 0 0 0;
+   font-size: 2rem;
   }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-} */
