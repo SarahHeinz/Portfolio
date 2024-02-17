@@ -120,13 +120,14 @@ ol {
 
 a {
   text-decoration: none;
-  color: #FFE8D6;
+  color:  #EC91C4;;;
 }
 
 
 p {
   font-size: .875em;
   line-height: 1.285;
+  margin: 0;
 }
 
 img {
@@ -136,7 +137,7 @@ img {
 
 
 main {
-  color: #453E4F;
+  color: #351D77;
 }
 
 /* ---------------Mobile Styles - Homepage --------->
@@ -144,7 +145,7 @@ main {
 
 
 header {
-  background: #453E4F;
+  background: #351D77;
   padding-top: 20px;
   padding-bottom: 40px;
   display: flex;
@@ -171,6 +172,7 @@ flex-flow: row wrap;
 align-items: center; */
   margin-bottom: 60px;
   display: block;
+
 }
 
 
@@ -193,12 +195,14 @@ header nav ul li {
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: bold;
+ 
 }
 
 header nav #contact-link {
-  background-color: #ff7373;
+  background-color: rgb(67, 228, 228);
   padding: 10px 10px;
   border-radius: 30px;
+  color: #351D77;
 }
 
 header .home-title {
@@ -211,7 +215,7 @@ align-items: center; */
 }
 
 header h1 {
-  color: #f7be93;
+  color: #EC91C4;
   font-size: 1.75rem;
   line-height: 1.5;
   margin: 0;
@@ -221,7 +225,7 @@ header h1 {
 
 
 header h2 {
-  color: #FFE8D6;
+  color: #EC91C4;
   width: 100%;
   margin: 60px 0 0 0;
   font-size: 1rem;
@@ -233,25 +237,28 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
-  padding: 50px 0 50px 0;
+  flex-flow: row wrap;
+  padding: 30px 0 30px 0;
+  width: 100%;
 }
 
 footer #contact {}
 
 footer .content-wrapper {
-  width: 85%;
+  width: 90%;
   text-align: center;
   display: block;
-  color: #453E4F;
+  color: #351D77;
+  margin: 50px 0;
 }
 
 #contact h3 {
-  margin: 0 0 10px 0;
+  margin: 0 0 30px 0;
   font-size: 1.5rem;
   line-height: 1.5;
   width: 100%;
   font-family: "PP Hatton Medium";
+  color: #EC91C4;
 }
 
 footer .contact-wrapper {
@@ -264,14 +271,15 @@ footer .contact-wrapper {
 footer .contact-info {
   margin: 20px 0 20px 0;
   display: block;
-
+  color: #EC91C4;
+  width: 60%;
 }
 
 footer .follow-section {
-
   display: flex;
   flex-flow: column wrap;
   text-align: center;
+  padding: 10px;
 }
 
 footer .contact-title {
@@ -280,7 +288,6 @@ footer .contact-title {
   font-weight: bold;
   font-size: 1.5rem;
   font-family: "PP Hatton Medium";
-  ;
 }
 
 footer .social-icons {
@@ -288,6 +295,7 @@ footer .social-icons {
   justify-content: space-around;
   text-align: center;
   flex-direction: row;
+  padding: 20px;
 }
 
 footer .social-icons li {
@@ -296,7 +304,6 @@ footer .social-icons li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 
 
@@ -304,30 +311,326 @@ footer p {
   font-size: 1.25rem;
   margin: 0;
   line-height: 1.5;
-  font-family: "PP Hatton Medium";
+  font-family: Arial, Helvetica, sans-serif;
+  color: #EC91C4;
 }
 
 
 
 
 footer {
-  background-color: #F19494;
+  background: #351D77;
   font-family: "PP Hatton Medium";
-  ;
 }
 
 footer .copyright {
   font-style: italic;
-  padding: 0 20px 0 20px;
-
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
 /* -------------------MAIN ---------------- */
 body {
-  background-color: #FFE8D6;
+  background-color: #E8F0E4;
 }
 
+
+#work {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  background-color: #E8F0E4;
+}
+
+main .content-wrapper {
+  width: 85%;
+  text-align: center;
+
+}
+
+#work h3 {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "PP Hatton Medium";
+
+}
+
+
+
+
+.portfolio-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.portfolio-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+
+.portfolio-project figure {
+  width: 100%;
+  margin: 20px 0 50px 0;
+  text-align: center;
+  filter: drop-shadow(1px 2px 6px blue);
+  align-items: center;
+}
+
+.portfolio-project img {
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.portfolio-project h4 {
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  line-height: 1.5;
+  width: 100%;
+  text-align: center;
+  font-family: "PP Hatton Medium";
+  font-size: 1.25rem;
+}
+
+.project-description {
+  margin: 0 0 30px 0;
+}
+
+#work p {
+  width: 100%;
+  text-align: left;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+span {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+#work .flex-fill p {
+  margin: 0;
+}
+
+.project-link {
+  margin: 40px 0 60px 0;
+  font-size: 1.125rem;
+  background-color: darkcyan;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.75rem 3.75rem;
+  border-radius: 30px;
+}
+
+main .flex-fill {}
+
+
+/* --------------SKILLS -----------*/
+#skills {
+  padding 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  background-color: #EC91C4;
+}
+
+#skills .content-wrapper {
+  width: 85%;
+  display: block;
+  text-align: center;
+  margin: 50px 0;
+
+
+}
+
+.skills-header {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+  font-family: "PP Hatton Medium";
+}
+
+
+
+.skill-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.skill-wrapper p {
+  font-size: 1rem;
+  padding: 20px 0;
+  background-color: #351D77;
+  line-height: 1.5;
+  text-align: center;
+  margin: 20px 0;
+  width: 90%;
+  color: #EEE4F0;
+  font-weight: bold;
+}
+
+
+
+
+#skills h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 30px 0;
+  width: 100%;
+  text-align: center;
+  font-family: "PP Hatton Medium";
+}
+
+/* -------- TOOLS ----------*/
+
+.tool-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.tool-wrapper p {
+  font-size: 1rem;
+  padding: 20px 0;
+  background-color: #351D77;
+  line-height: 1.5;
+  text-align: center;
+  margin: 20px 0;
+  width: 90%;
+  color: #EEE4F0;
+}
+
+.tool-wrapper h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+  font-family: "PP Hatton Medium";
+}
+
+
+
+
+/* -------------ABOUT ---------*/
+
+#about {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 60px 0;
+  background-color: #EEE4F0;
+}
+
+#about .content-wrapper {
+  width: 100%;
+  display: block;
+  text-align: center;
+
+}
+
+.about-content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+#about figure {
+  width: 95%;
+
+
+}
+
+#profile-image {
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
+  margin: 0 0 40px 0;
+}
+
+
+
+.about-info {
+  font-family: "PP Hatton Medium";
+  width: 100%;
+}
+
+#about h3 {
+  margin-bottom: 40px;
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+
+#about h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+#about .about-text {
+  margin: 0 0 30px 0;
+}
+
+#about p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+  width: 100%;
+  font-family: arial;
+}
+
+#about span {
+  font-weight: bold;
+  margin: 20px 0;
+
+}
 
 
 
@@ -645,13 +948,13 @@ body {
 
   /* ------------------------ HEADER ---------*/
   header {
-    background: #453E4F;
+    background: #351D77;
     padding-top: 50px;
     padding-bottom: 140px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    text-align: center;
+    text-align: ce qnter;
   }
 
   header .content-wrapper {
@@ -668,8 +971,6 @@ body {
     margin-bottom: 50px;
   }
 
-
-  header nav ul {}
 
   header nav ul li {
     display: inline;
@@ -714,10 +1015,10 @@ body {
   footer #contact {}
 
   footer .content-wrapper {
-    width: 85%;
+    width: 70%;
     text-align: center;
     display: block;
-    color: #453E4F;
+    color: #351D77;
   }
 
   #contact h3 {
@@ -738,7 +1039,7 @@ body {
   footer .contact-info {
     margin: 80px 0 80px 0;
     display: block;
-
+width: 33%;
   }
 
   footer .follow-section {
@@ -783,7 +1084,6 @@ body {
 
   /* -----------------PROJECTS--------------*/
 
-  main .portfolio {}
 
   #work {
     display: flex;
@@ -792,6 +1092,7 @@ body {
     text-align: center;
     width: 100%;
     padding-top: 80px;
+    background-color: #E8F0E4;
   }
 
   main .content-wrapper {
@@ -905,6 +1206,7 @@ body {
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
+    background-color: #EC91C4;
   }
 
   #skills .content-wrapper {
@@ -912,6 +1214,8 @@ body {
     display: block;
     text-align: center;
     margin: 50px 0;
+
+
   }
 
   .skills-header {
@@ -1007,12 +1311,14 @@ body {
     flex-flow: row wrap;
     width: 100%;
     padding: 100px 0;
+    background-color: #EEE4F0;
   }
 
   #about .content-wrapper {
     width: 85%;
     display: block;
     text-align: center;
+
   }
 
   .about-content-wrapper {
@@ -1062,7 +1368,6 @@ body {
     text-align: center;
   }
 
-  .about-text {}
 
   #about p {
     font-size: 1.25rem;
