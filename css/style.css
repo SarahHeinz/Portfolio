@@ -1008,11 +1008,11 @@ main .flex-fill {}
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     padding: 140px 0 140px 0;
   }
 
-  footer #contact {}
+
 
   footer .content-wrapper {
     width: 70%;
@@ -1034,6 +1034,7 @@ main .flex-fill {}
     justify-content: center;
     align-items: flex-start;
     flex-flow: row wrap;
+    text-align: center;
   }
 
   footer .contact-info {
@@ -1042,12 +1043,14 @@ main .flex-fill {}
 width: 33%;
   }
 
-  footer .follow-section {
-    width: 33%;
+  footer .contact-info-follow {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: center;
+    color:#EC91C4;
     margin: 80px 0 80px 0;
+    display: block;
+width: 33%;
   }
 
   footer .contact-title {
@@ -1055,13 +1058,15 @@ width: 33%;
     display: block;
     font-weight: 400;
     font-size: 1.5rem;
+    width: 100%;
+    line-height: 1.5;
   }
 
   footer .social-icons {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    flex-direction: row;
+  
   }
 
   footer .social-icons li {
@@ -1071,12 +1076,14 @@ width: 33%;
     justify-content: center;
     align-items: center;
 
+
   }
 
   footer p {
     font-size: 1.25rem;
     margin: 0;
     line-height: 1.5;
+    text-align: center;
   }
 
 
@@ -1200,7 +1207,7 @@ width: 33%;
 
   /* --------------SKILLS -----------*/
   #skills {
-    padding 100px 0;
+    padding: 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1331,7 +1338,7 @@ width: 33%;
 
   #about figure {
     width: 35%;
-    margin-top: 20px 0 40px 0;
+    margin: 20px 0 40px 0;
 
   }
 
