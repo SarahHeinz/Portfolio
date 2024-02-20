@@ -1257,13 +1257,13 @@ text-align: center;
 
   /* ------------------------ HEADER ---------*/
   header {
-    background: #351D77;
+    background: #0C3e75;
     padding-top: 50px;
     padding-bottom: 140px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    text-align: ce qnter;
+    text-align: center;
   }
 
   header .content-wrapper {
@@ -1296,7 +1296,7 @@ text-align: center;
   }
 
   header h1 {
-    color: #FFE8D6;
+    color: #fcbA03;
     width: 100%;
     font-size: 4rem;
     margin: 0;
