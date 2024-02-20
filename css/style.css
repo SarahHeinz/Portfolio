@@ -107,7 +107,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #e2e3ed;
   text-align: left;
-  background-color: #a8cfd3;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 
 ul,
@@ -341,7 +341,7 @@ footer .copyright {
   text-align: center;
   width: 100%;
   padding-top: 10px;
-  background-color: #a8cfd3;
+  background-color:rgba(255,255,255,0.2)
 }
 
 main .content-wrapper {
@@ -449,7 +449,13 @@ main .flex-fill {}
   flex-flow: row wrap;
   width: 100%;
   background-color: #EC91C4;
+  background: hsla(184, 46%, 75%, 0.2); 
 }
+
+#skills:hover {
+  background: hsla(184, 46%, 75%, 0.9);
+}
+
 
 #skills .content-wrapper {
   width: 85%;
@@ -554,7 +560,13 @@ main .flex-fill {}
   flex-flow: row wrap;
   width: 100%;
   padding: 60px 0;
-  background-color: #EEE4F0;
+  
+  background: hsla(350,50%,50%,0.4); 
+  opacity: 0.;
+}
+
+#about:hover {
+  background: hsla(350,50%,50%,0.9);
 }
 
 #about .content-wrapper {
