@@ -152,6 +152,7 @@ header {
   flex-flow: row wrap;
   justify-content: center;
   text-align: center;
+  border-radius: 30px;
 }
 
 header .content-wrapper {
@@ -240,6 +241,7 @@ footer {
   flex-flow: row wrap;
   padding: 30px 0 30px 0;
   width: 100%;
+  border-radius: 30px;
 }
 
 footer #contact {}
@@ -342,6 +344,7 @@ footer .copyright {
   width: 100%;
   padding-top: 10px;
   background: hsla(326, 46%, 75%, 0.2); 
+  border-radius: 30px;
 }
 
 #work:hover {
@@ -452,8 +455,9 @@ main .flex-fill {}
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
-
+  border-radius: 30px;
   background: hsla(184, 46%, 75%, 0.2); 
+  border-radius: 30px;
 }
 
 #skills:hover {
@@ -566,6 +570,7 @@ main .flex-fill {}
   padding: 60px 0;
   
   background: hsla(350,50%,50%,0.3); 
+  border-radius: 30px;
 }
 
 #about:hover {
@@ -884,6 +889,7 @@ main .flex-fill {}
     align-items: center;
     flex-flow: row nowrap;
     padding: 50px 0 50px 0;
+    border-radius: 30px;
   }
 
   footer #contact {}
@@ -969,6 +975,7 @@ align-items: center;
     width: 100%;
     padding-top: 60px;
     background: hsla(326, 46%, 75%, 0.2); 
+    border-radius: 30px;
   }
   
   #work:hover {
@@ -1088,7 +1095,8 @@ text-align: center;
     flex-flow: row wrap;
     width: 100%;
     background: hsla(184, 46%, 75%, 0.2); 
-}
+    border-radius: 30px;
+  }
 
 #skills:hover {
   background: hsla(184, 46%, 75%, 0.9);
@@ -1099,7 +1107,7 @@ text-align: center;
     display: block;
     text-align: center;
     margin: 50px 0;
-
+    border-radius: 30px;
 
   }
 
@@ -1196,7 +1204,8 @@ text-align: center;
     flex-flow: row wrap;
     width: 100%;
     padding: 100px 0;
-    background: hsla(350,50%,50%,0.3); 
+    background: hsla(350,50%,50%,0.3);
+    border-radius: 30px; 
   }
   
   #about:hover {
@@ -1346,6 +1355,7 @@ text-align: center;
     align-items: center;
     flex-flow: row nowrap;
     padding: 140px 0 140px 0;
+    border-radius: 30px;
   }
 
 
@@ -1436,6 +1446,7 @@ width: 33%;
     width: 100%;
     padding-top: 80px;
     background: hsla(326, 46%, 75%, 0.2); 
+    border-radius: 30px;
   }
   
   #work:hover {
@@ -1554,6 +1565,7 @@ width: 33%;
     flex-flow: row wrap;
     width: 100%;
     background: hsla(184, 46%, 75%, 0.2); 
+    border-radius: 30px;
   }
   
   #skills:hover {
@@ -1662,7 +1674,8 @@ background-color: #0C3E75;
     flex-flow: row wrap;
     width: 100%;
     padding: 100px 0;
-    background: hsla(350,50%,50%,0.4); 
+    background: hsla(350,50%,50%,0.4);
+    border-radius: 30px; 
   }
   
   #about:hover {
