@@ -341,7 +341,11 @@ footer .copyright {
   text-align: center;
   width: 100%;
   padding-top: 10px;
-  background-color:rgba(255,255,255,0.2)
+  background: hsla(326, 46%, 75%, 0.2); 
+}
+
+#work:hover {
+  background: hsla(326, 46%, 75%, 0.9);
 }
 
 main .content-wrapper {
@@ -448,7 +452,7 @@ main .flex-fill {}
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
-  background-color: #EC91C4;
+
   background: hsla(184, 46%, 75%, 0.2); 
 }
 
@@ -529,7 +533,7 @@ main .flex-fill {}
 .tool-wrapper p {
   font-size: 1rem;
   padding: 20px 0;
-  background-color: #351D77;
+  background-color: #0C3E75;
   line-height: 1.5;
   text-align: center;
   margin: 20px 0;
@@ -561,8 +565,7 @@ main .flex-fill {}
   width: 100%;
   padding: 60px 0;
   
-  background: hsla(350,50%,50%,0.4); 
-  opacity: 0.;
+  background: hsla(350,50%,50%,0.3); 
 }
 
 #about:hover {
@@ -814,12 +817,12 @@ main .flex-fill {}
     page-break-after: avoid;
   }
 }
-
+/*---------------------------Tablet ---------------*/
 @media only screen and (min-width:768px) {
 
-  /*Tablet styles here*/
+/* ------------------ HEADER -------------*/
   header {
-    background: #453E4F;
+    background: #0C3e75;
     padding-top: 50px;
     padding-bottom: 80px;
     display: flex;
@@ -861,14 +864,14 @@ main .flex-fill {}
   }
 
   header h1 {
-    color: #FFE8D6;
+    color: #EC91C4;
     width: 100%;
     font-size: 3rem;
     margin: 0;
   }
 
   header h2 {
-    color: #FFE8D6;
+    color: #EC91C4;
     width: 100%;
     margin: 40px 0 0 0;
     font-size: 2rem;
@@ -965,9 +968,13 @@ align-items: center;
     text-align: center;
     width: 100%;
     padding-top: 60px;
-    background-color: #E8F0E4;
+    background: hsla(326, 46%, 75%, 0.2); 
   }
-
+  
+  #work:hover {
+    background: hsla(326, 46%, 75%, 0.9);
+  }
+  
   main .content-wrapper {
     width: 85%;
     text-align: center;
@@ -1080,8 +1087,12 @@ text-align: center;
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
-    background-color: #EC91C4;
-  }
+    background: hsla(184, 46%, 75%, 0.2); 
+}
+
+#skills:hover {
+  background: hsla(184, 46%, 75%, 0.9);
+}
 
   #skills .content-wrapper {
     width: 85%;
@@ -1116,7 +1127,7 @@ text-align: center;
   .skill-wrapper p {
     font-size: 1rem;
     padding: 20px 0;
-    background-color: #F19494;
+    background-color: #0c3e75;
     line-height: 1.5;
     text-align: center;
     margin: 20px 0;
@@ -1154,7 +1165,7 @@ text-align: center;
   .tool-wrapper p {
     font-size: 1rem;
     padding: 20px 0;
-    background-color: #F19494;
+    background-color:#0C3E75;
     line-height: 1.5;
     text-align: center;
     margin: 20px 0;
@@ -1185,8 +1196,13 @@ text-align: center;
     flex-flow: row wrap;
     width: 100%;
     padding: 100px 0;
-    background-color: #EEE4F0;
+    background: hsla(350,50%,50%,0.3); 
   }
+  
+  #about:hover {
+    background: hsla(350,50%,50%,0.9);
+  }
+  
 
   #about .content-wrapper {
     width: 100%;
@@ -1306,14 +1322,14 @@ text-align: center;
   }
 
   header h1 {
-    color: #fcbA03;
+    color: #EC91C4;
     width: 100%;
     font-size: 4rem;
     margin: 0;
   }
 
   header h2 {
-    color: #FFE8D6;
+    color: #EC91C4;
     width: 100%;
     margin: 40px 0 0 0;
     font-size: 2rem;
@@ -1419,9 +1435,13 @@ width: 33%;
     text-align: center;
     width: 100%;
     padding-top: 80px;
-    background-color: #E8F0E4;
+    background: hsla(326, 46%, 75%, 0.2); 
   }
-
+  
+  #work:hover {
+    background: hsla(326, 46%, 75%, 0.9);
+  }
+  
   main .content-wrapper {
     width: 85%;
     text-align: center;
@@ -1533,7 +1553,11 @@ width: 33%;
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
-    background-color: #EC91C4;
+    background: hsla(184, 46%, 75%, 0.2); 
+  }
+  
+  #skills:hover {
+    background: hsla(184, 46%, 75%, 0.9);
   }
 
   #skills .content-wrapper {
@@ -1569,7 +1593,7 @@ width: 33%;
   .skill-wrapper p {
     font-size: 1rem;
     padding: 20px 0;
-    background-color: #F19494;
+    background-color: #0c3e75;
     line-height: 1.5;
     text-align: center;
     margin: 20px 0;
@@ -1607,7 +1631,7 @@ width: 33%;
   .tool-wrapper p {
     font-size: 1rem;
     padding: 20px 0;
-    background-color: #F19494;
+background-color: #0C3E75;
     line-height: 1.5;
     text-align: center;
     margin: 20px 0;
@@ -1638,7 +1662,11 @@ width: 33%;
     flex-flow: row wrap;
     width: 100%;
     padding: 100px 0;
-    background-color: #EEE4F0;
+    background: hsla(350,50%,50%,0.4); 
+  }
+  
+  #about:hover {
+    background: hsla(350,50%,50%,0.9);
   }
 
   #about .content-wrapper {
