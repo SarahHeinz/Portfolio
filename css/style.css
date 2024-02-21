@@ -228,9 +228,53 @@ header h1 {
 header h2 {
   color: #EC91C4;
   width: 100%;
-  margin: 60px 0 0 0;
-  font-size: 1rem;
+  margin: 60px 0 20px 0;
+  font-size: 1.75rem;
   font-family: "PP Hatton Medium";
+  padding: 2px 5px 0 5px;
+}
+
+.i-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+animation-composition: replace;
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(-50px)
+  }
+  50% {
+    transform: translateY(-100px)
+  }
+  75% {
+    transform: translateY(-150px)
+  }
+  100% {
+    transform: translateY(-200px)
+  }
+}
+
+.i-title-item {
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:  rgb(67, 228, 228);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.i-title-planet {
+
+ 
+  width: 10%;
+  height: auto;
+
 }
 
 /*footer*/
@@ -881,6 +925,49 @@ main .flex-fill {}
     margin: 40px 0 0 0;
     font-size: 2rem;
   }
+  i-title {
+    height: 50px;
+    overflow: hidden;
+  }
+  
+  .i-title-wrapper {
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+  animation-composition: replace;
+  }
+  
+  @keyframes move {
+    25% {
+      transform: translateY(-50px)
+    }
+    50% {
+      transform: translateY(-100px)
+    }
+    75% {
+      transform: translateY(-150px)
+    }
+    100% {
+      transform: translateY(-200px)
+    }
+  }
+  
+  .i-title-item {
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  rgb(67, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .i-title-planet {
+  
+   
+    width: 10%;
+    height: auto;
+  
+  }
+  
 
   /* ---------- FOOTER -------*/
   footer {
@@ -1340,9 +1427,53 @@ text-align: center;
   header h2 {
     color: #EC91C4;
     width: 100%;
-    margin: 40px 0 0 0;
-    font-size: 2rem;
+    margin: 40px 0 40px 0;
+    font-size: 3rem;
   }
+
+  i-title {
+    height: 50px;
+    overflow: hidden;
+  }
+  
+  .i-title-wrapper {
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+  animation-composition: replace;
+  }
+  
+  @keyframes move {
+    25% {
+      transform: translateY(-50px)
+    }
+    50% {
+      transform: translateY(-100px)
+    }
+    75% {
+      transform: translateY(-150px)
+    }
+    100% {
+      transform: translateY(-200px)
+    }
+  }
+  
+  .i-title-item {
+    height: 50px;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color:  rgb(67, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .i-title-planet {
+  
+   
+    width: 5%;
+    height: auto;
+  
+  }
+  
 
   /* --------------MAIN--------*/
 
