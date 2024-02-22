@@ -1054,6 +1054,11 @@ align-items: center;
     margin: 0;
     line-height: 1.5;
   }
+
+  .final-image {
+    height: 30%;
+    width: 100%;
+  }
  /* -------------MAIN-------------------*/
 
   /* -----------------PROJECTS--------------*/
@@ -1405,11 +1410,6 @@ text-align: center;
     flex-flow: column wrap;
   }
 
-  header nav {
-    justify-content: flex-end;
-    width: 55%;
-    margin-bottom: 100px;
-  }
 
 
   header nav ul li {
@@ -1571,6 +1571,7 @@ width: 33%;
     line-height: 1.5;
     text-align: center;
   }
+
 
 
   /* -------------MAIN-------------------*/

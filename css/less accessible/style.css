@@ -1,0 +1,2075 @@
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+@font-face {
+  font-family: "PP Hatton Medium";
+  src: url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.eot");
+  src: url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.svg#PP Hatton Medium")format("svg");
+}
+
+/* 
+source WebFont: https://www.onlinewebfonts.com/download/9e65328448e32690935f5e0dec7e40be */
+/*
+
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #a8cfd3;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  color: #351D77;
+  text-align: left;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+a {
+  text-decoration: none;
+  color:  #EC91C4;
+}
+
+
+p {
+  font-size: .875em;
+  line-height: 1.285;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+main {
+  color: #351D77;
+}
+
+/* ---------------Mobile Styles - Homepage --------->
+/* ------------------------ HEADER ---------*/
+
+
+header {
+  background: #351D77;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  border-radius: 30px;
+}
+
+header .content-wrapper {
+  /* display: flex;
+justify-content: center;
+width: 85%;
+align-items: center;
+flex-flow: row wrap; */
+  display: block;
+  margin-bottom: 60px;
+
+  width: 100%;
+}
+
+
+
+/* ---------------- NAVIGATION -------*/
+
+header nav {
+  /* justify-content:center;
+width: 45%;
+margin-bottom: 40px;
+flex-flow: row wrap;
+align-items: center; */
+  margin-bottom: 60px;
+  display: block;
+
+}
+
+header nav ul {
+  /* display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center; */
+
+
+}
+
+header nav ul li {
+  /* display: flex;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  flex-flow: column wrap;
+  justify-content: space-between; */
+  font-size: .75rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+ 
+}
+
+.accessible {
+  color: #52cffe;
+  border-width: 9px;
+  border-color:  #52cffe;
+  border-style: double;
+}
+
+.language {
+color: rgb(221, 209, 32);
+border: rgb(221, 209, 32) 2px;
+border-style: solid;
+}
+
+
+
+header nav #contact-link {
+  background-color:#EC91C4;
+  padding: 10px 10px;
+  border-radius: 30px;
+  color: #351D77;
+}
+
+/* ------------- LANGUAGE BUTTON --------
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+header nav .dropbtn {
+  background-color: rgb(67, 228, 228);
+  padding: 10px 10px;
+  border-radius: 30px;
+  color: #351D77;
+  border: none;
+  font-weight: bold;
+ text-transform: uppercase;
+}
+
+.dropdown-content {
+  display: none;
+  position: center;
+  background-color: rgb(67, 228, 228);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #351D77;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} */
+
+
+/* ----------- Accessibility Toggle Button --------
+
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+
+.switch > span {
+  position: absolute;
+  top: 14px;
+  pointer-events: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+  width: 50%;
+  text-align: center;
+}
+
+input.check-toggle-round-flat:checked ~ .off {
+  color:rgb(67, 228, 228);
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+  color:  #351D77;
+}
+
+.switch > span.on {
+  left: 0;
+  padding-left: 2px;
+  color: rgb(67, 228, 228);
+}
+
+.switch > span.off {
+  right: 0;
+  padding-right: 4px;
+  color: #fff;
+}
+
+.check-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.check-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input.check-toggle-round-flat + label {
+  padding: 2px;
+  width: 97px;
+  height: 35px;
+  background-color: rgb(67, 228, 228);
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+input.check-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #EC91C4;
+  -webkit-
+  
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.check-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 48px;
+  background-color: #fff;
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  -ms-border-radius: 52px;
+  -o-border-radius: 52px;
+  border-radius: 52px;
+  -webkit-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  -o-transition: margin 0.2s;
+  transition: margin 0.2s;
+}
+
+input.check-toggle-round-flat:checked + label {
+}
+
+input.check-toggle-round-flat:checked + label:after {
+  margin-left: 44px;
+} */
+
+
+header .home-title {
+  /* max-width: 95%;
+display: flex;
+flex-flow:row wrap;
+justify-content: center;
+align-items: center; */
+  display: block;
+}
+
+header h1 {
+  color: #EC91C4;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  margin: 0;
+  display: block;
+  font-family: "PP Hatton Medium";
+}
+
+
+header h2 {
+  color: #EC91C4;
+  width: 100%;
+  margin: 60px 0 20px 0;
+  font-size: 1.75rem;
+  font-family: "PP Hatton Medium";
+  padding: 2px 5px 0 5px;
+}
+
+.i-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+animation-composition: replace;
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(-50px)
+  }
+  50% {
+    transform: translateY(-100px)
+  }
+  75% {
+    transform: translateY(-150px)
+  }
+  100% {
+    transform: translateY(-200px)
+  }
+}
+
+.i-title-item {
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:  rgb(67, 228, 228);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.i-title-planet {
+
+ 
+  width: 10%;
+  height: auto;
+
+}
+
+/*footer*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 30px 0 30px 0;
+  width: 100%;
+  border-radius: 30px;
+}
+
+footer #contact {}
+
+footer .content-wrapper {
+  width: 90%;
+  text-align: center;
+  display: block;
+  color: #351D77;
+  margin: 50px 0;
+}
+
+#contact h3 {
+  margin: 0 0 30px 0;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  width: 100%;
+  font-family: "PP Hatton Medium";
+  color: #EC91C4;
+}
+
+footer .contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+footer .contact-info {
+  margin: 20px 0 20px 0;
+  display: block;
+  color: #EC91C4;
+  width: 60%;
+}
+
+footer .follow-section {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  padding: 10px;
+}
+
+footer .contact-title {
+  margin: 10px 0 10px 0;
+  display: block;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "PP Hatton Medium";
+  color: #EC91C4;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: row;
+  padding: 20px;
+}
+
+footer .social-icons li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 10px;
+}
+
+
+footer p {
+  font-size: 1.25rem;
+  margin: 0;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #EC91C4;
+}
+
+
+
+
+footer {
+  background: #351D77;
+  font-family: "PP Hatton Medium";
+}
+
+footer .copyright {
+  font-style: italic;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* -------------------MAIN ---------------- */
+
+
+
+#work {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  background: hsla(326, 46%, 75%, 0.2); 
+  border-radius: 30px;
+}
+  /* ---------------------- Change Background Color -----*/
+/*   
+#work:hover {
+  background: hsla(326, 46%, 75%, 0.9);
+} */
+
+main .content-wrapper {
+  width: 85%;
+  text-align: center;
+
+}
+
+#work h3 {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "PP Hatton Medium";
+
+}
+
+
+
+
+.portfolio-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.portfolio-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+
+.portfolio-project figure {
+  width: 100%;
+  margin: 20px 0 50px 0;
+  text-align: center;
+  filter: drop-shadow(1px 2px 6px blue);
+  align-items: center;
+}
+
+.portfolio-project img {
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.portfolio-project h4 {
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  line-height: 1.5;
+  width: 100%;
+  text-align: center;
+  font-family: "PP Hatton Medium";
+  font-size: 1.25rem;
+}
+
+.project-description {
+  margin: 0 0 30px 0;
+}
+
+#work p {
+  width: 100%;
+  text-align: left;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+span {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+#work .flex-fill p {
+  margin: 0;
+}
+
+.project-link {
+  margin: 40px 0 60px 0;
+  font-size: 1.125rem;
+  background-color: #08bdd1d2;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.75rem 3.75rem;
+  border-radius: 30px;
+}
+
+main .flex-fill {}
+
+
+/* --------------SKILLS -----------*/
+#skills {
+  padding 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  border-radius: 30px;
+  background: hsla(184, 46%, 75%, 0.2); 
+  border-radius: 30px;
+}
+
+  /* ---------------------- Change Background Color -----*/
+/* 
+#skills:hover {
+  background: hsla(184, 46%, 75%, 0.6);
+} */
+
+
+#skills .content-wrapper {
+  width: 85%;
+  display: block;
+  text-align: center;
+  margin: 50px 0;
+
+
+}
+
+.skills-header {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+  font-family: "PP Hatton Medium";
+}
+
+
+
+.skill-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.skill-wrapper p {
+  font-size: 1rem;
+  padding: 20px 0;
+  background-color: #351D77;
+  line-height: 1.5;
+  text-align: center;
+  margin: 20px 0;
+  width: 90%;
+  color: #EEE4F0;
+  font-weight: bold;
+}
+
+
+
+
+#skills h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 30px 0;
+  width: 100%;
+  text-align: center;
+  font-family: "PP Hatton Medium";
+}
+
+/* -------- TOOLS ----------*/
+
+.tool-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.tool-wrapper p {
+  font-size: 1rem;
+  padding: 20px 0;
+  background-color: #351D77;
+  line-height: 1.5;
+  text-align: center;
+  margin: 20px 0;
+  width: 90%;
+  color: #EEE4F0;
+}
+
+.tool-wrapper h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+  font-family: "PP Hatton Medium";
+}
+
+
+
+
+/* -------------ABOUT ---------*/
+
+#about {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 60px 0;
+  
+  background: hsla(350,50%,50%,0.3); 
+  border-radius: 30px;
+}
+
+#about:hover {
+  background: hsla(350,50%,50%,0.9);
+}
+
+#about .content-wrapper {
+  width: 100%;
+  display: block;
+  text-align: center;
+
+}
+
+.about-content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+#about figure {
+  width: 95%;
+
+
+}
+
+#profile-image {
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
+  margin: 0 0 40px 0;
+}
+
+
+
+.about-info {
+  font-family: "PP Hatton Medium";
+  width: 100%;
+}
+
+#about h3 {
+  margin-bottom: 40px;
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+
+#about h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+#about .about-text {
+  margin: 0 0 30px 0;
+}
+
+#about p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+  width: 100%;
+  font-family: arial;
+}
+
+#about span {
+  font-weight: bold;
+  margin: 20px 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/*---------------------------Tablet ---------------*/
+@media only screen and (min-width:768px) {
+
+/* ------------------ HEADER -------------*/
+  header {
+    background: #351D77;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header .content-wrapper {
+    display: flex;
+    justify-content: center;
+
+    align-items: flex-end;
+    flex-flow: row wrap;
+ width: 90%;
+  }
+
+  header nav {
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 100px;
+
+  }
+
+
+  header nav ul {}
+
+  header nav ul li {
+    text-transform: uppercase;
+    margin: 20px;
+    font-size: 1.5rem;
+  }
+
+  header .home-title {
+    max-width: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  header h1 {
+    color: #EC91C4;
+    width: 100%;
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  header h2 {
+    color: #EC91C4;
+    width: 100%;
+    margin: 40px 0 0 0;
+    font-size: 2rem;
+  }
+  i-title {
+    height: 50px;
+    overflow: hidden;
+  }
+  
+  .i-title-wrapper {
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+  animation-composition: replace;
+  }
+  
+  @keyframes move {
+    25% {
+      transform: translateY(-50px)
+    }
+    50% {
+      transform: translateY(-100px)
+    }
+    75% {
+      transform: translateY(-150px)
+    }
+    100% {
+      transform: translateY(-200px)
+    }
+  }
+  
+  .i-title-item {
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  rgb(67, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .i-title-planet {
+  
+   
+    width: 8%;
+    height: auto;
+  
+  }
+  
+
+  /* ---------- FOOTER -------*/
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding: 50px 0 50px 0;
+    border-radius: 30px;
+  }
+
+  footer #contact {}
+
+  footer .content-wrapper {
+    width: 85%;
+    text-align: center;
+    display: block;
+    color: #351D77;
+  }
+
+  #contact h3 {
+    margin: 0 0 20px 0;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    width: 100%;
+
+  }
+
+  footer .contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  footer .contact-info {
+    margin: 30px 0 30px 0;
+    display: block;
+width: 33%;
+  }
+
+  footer .contact-info-follow {
+    width: 33%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+    color:#EC91C4;
+  }
+
+  footer .contact-title {
+    margin: 0 0 30px 0;
+    display: block;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+   width: 12.5em;
+  }
+
+  footer .social-icons li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+  
+  }
+  footer ul  {
+flex-direction: row;
+align-items: center;
+  }
+
+  footer p {
+    font-size: 1.25rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .final-image {
+    height: 30%;
+    width: 100%;
+  }
+ /* -------------MAIN-------------------*/
+
+  /* -----------------PROJECTS--------------*/
+
+
+  #work {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 60px;
+    background: hsla(326, 46%, 75%, 0.2); 
+    border-radius: 30px;
+  }
+
+  /* -------------Change Background-----*/
+  /* #work:hover {
+    background: hsla(326, 46%, 75%, 0.9);
+  } */
+  
+  main .content-wrapper {
+    width: 85%;
+    text-align: center;
+  }
+
+  #work h3 {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "PP Hatton Medium";
+
+  }
+
+
+  .porfolio-header {
+    margin: 0 0 60px 0;
+  }
+
+  .portfolio-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    text-align: center;
+    align-items: start;
+    /* align-items: stretch;*/
+  }
+
+  .portfolio-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .portfolio-project figure {
+    width: 100%;
+    margin: 20px 0 40px 0;
+    text-align: center;
+    filter: drop-shadow(1px 2px 6px blue);
+ 
+  }
+
+  .portfolio-project img {
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+
+  .portfolio-project h4 {
+    font-weight: bold;
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+    width: 100%;
+    text-align: center;
+    font-family: "PP Hatton Medium";
+  }
+
+  .project-description p {
+    margin: 0 0 30px 0;
+  }
+
+  #work p {
+    width: 100%;
+    text-align: left;
+
+    font-size: 1.25rem;
+    line-height: 1.5;
+
+
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.5;
+
+  }
+
+  #work .flex-fill p {
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  .project-link {
+    margin: 40px 0 80px 0;
+    font-size: 1rem;
+    background-color: darkcyan;
+    text-transform: uppercase;
+    color: white;
+    padding: 0.75rem 3.75rem;
+    border-radius: 30px;
+text-align: center;
+  }
+
+  main .flex-fill {}
+
+
+  /* --------------SKILLS -----------*/
+  #skills {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    background: hsla(184, 46%, 75%, 0.2); 
+    border-radius: 30px;
+  }
+
+  /* ---------------------- Change Background Color -----*/
+/* #skills:hover {
+  background: hsla(184, 46%, 75%, 0.9);
+} */
+
+  #skills .content-wrapper {
+    width: 85%;
+    display: block;
+    text-align: center;
+    margin: 50px 0;
+    border-radius: 30px;
+
+  }
+
+  .skills-header {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+    color: #351D77;
+  }
+
+
+
+  .skill-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .skill-wrapper p {
+    font-size: 1rem;
+    padding: 20px 0;
+    background-color: #351D77;
+    line-height: 1.5;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+
+  #skills .skill {
+    width: 45%;
+
+  }
+
+  #skills h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    font-family: "PP Hatton Medium";
+    color: #351D77;
+  }
+
+  /* -------- TOOLS ----------*/
+
+  .tool-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+
+  .tool-wrapper p {
+    font-size: 1rem;
+    padding: 20px 0;
+    background-color:#351D77;
+    line-height: 1.5;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .tool-wrapper h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    font-family: "PP Hatton Medium";
+    color: #351D77;
+  }
+
+  #skills .tool {
+    width: 45%;
+  }
+
+
+  /* -------------ABOUT ---------*/
+
+  #about {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 100px 0;
+    background: hsla(350,50%,50%,0.3);
+    border-radius: 30px; 
+  }
+  
+  #about:hover {
+    background: hsla(350,50%,50%,0.9);
+  }
+  
+
+  #about .content-wrapper {
+    width: 100%;
+    display: block;
+    text-align: center;
+
+  }
+
+  .about-content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  #about figure {
+    width: 60%;
+
+  }
+
+  #profile-image {
+    width: 90%;
+    vertical-align: middle;
+    border-style: none;
+
+
+  }
+
+
+
+  .about-info {
+    font-family: "PP Hatton Medium";
+    width: 95%;
+  }
+
+  #about h3 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+  }
+
+  #about h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  #about p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+  }
+
+  #about span {
+    font-weight: bold;
+    margin: 20px 0;
+
+  }
+}
+
+/* -------------MAIN-------------------*/
+
+/* ------------------ DESKTOP --------------*/
+@media only screen and (min-width: 1200px) {
+
+  /*Desktop styles here*/
+
+  /* ------------------------ HEADER ---------*/
+  header {
+    background: #351D77;
+    padding-top: 50px;
+    padding-bottom: 140px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    align-items: flex-end;
+    flex-flow: column wrap;
+  }
+
+  header nav {
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .dropdown-content {
+  
+    position: absolute;
+
+  }
+
+
+  header nav ul li {
+    display: inline;
+    text-transform: uppercase;
+    margin: 0 0 0 20px;
+    font-size: 1.25rem;
+  }
+
+  header .home-title {
+    max-width: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  header h1 {
+    color: #EC91C4;
+    width: 100%;
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  header h2 {
+    color: #EC91C4;
+    width: 100%;
+    margin: 40px 0 40px 0;
+    font-size: 3rem;
+  }
+
+  i-title {
+    height: 50px;
+    overflow: hidden;
+  }
+  
+  .i-title-wrapper {
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+  animation-composition: replace;
+  }
+  
+  @keyframes move {
+    25% {
+      transform: translateY(-50px)
+    }
+    50% {
+      transform: translateY(-100px)
+    }
+    75% {
+      transform: translateY(-150px)
+    }
+    100% {
+      transform: translateY(-200px)
+    }
+  }
+  
+  .i-title-item {
+    height: 50px;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color:  rgb(67, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .i-title-planet {
+  display: inline;
+   
+    width: 5%;
+    height: auto;
+  
+  }
+  
+
+  /* --------------MAIN--------*/
+
+
+
+  /* -------- FOOTER -------*/
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding: 140px 0 140px 0;
+    border-radius: 30px;
+  }
+
+
+
+  footer .content-wrapper {
+    width: 70%;
+    text-align: center;
+    display: block;
+    color: #351D77;
+  }
+
+  #contact h3 {
+    margin: 0 0 60px 0;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    width: 100%;
+
+  }
+
+  footer .contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    text-align: center;
+  }
+
+  footer .contact-info {
+    margin: 80px 0 80px 0;
+    display: block;
+width: 33%;
+  }
+
+  footer .contact-info-follow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color:#EC91C4;
+    margin: 80px 0 80px 0;
+
+width: 33%;
+  }
+
+  footer .contact-title {
+    margin: 0 0 30px 0;
+    display: block;
+    font-weight: 400;
+    font-size: 1.5rem;
+    width: 100%;
+    line-height: 1.5;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  
+  }
+
+  footer .social-icons li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+
+  }
+
+  footer p {
+    font-size: 1.25rem;
+    margin: 0;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+
+
+  /* -------------MAIN-------------------*/
+
+  /* -----------------PROJECTS--------------*/
+
+
+  #work {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 80px;
+    background: hsla(326, 46%, 75%, 0.2); 
+    border-radius: 30px;
+  }
+  
+    /* ---------------------- Change Background Color -----*/
+  /* #work:hover {
+    background: hsla(326, 46%, 75%, 0.9);
+  } */
+  
+  main .content-wrapper {
+    width: 85%;
+    text-align: center;
+
+  }
+
+  #work h3 {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "PP Hatton Medium";
+
+  }
+
+
+  .porfolio-header {
+    margin: 0 0 60px 0;
+  }
+
+  .portfolio-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    text-align: center;
+    align-items: start;
+    /* align-items: stretch;*/
+  }
+
+  .portfolio-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .portfolio-project figure {
+    width: 100%;
+    margin: 20px 0 40px 0;
+    text-align: center;
+    filter: drop-shadow(1px 2px 6px blue);
+    align-items: center;
+  }
+
+  .portfolio-project img {
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+
+  .portfolio-project h4 {
+    font-weight: bold;
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+    width: 100%;
+    text-align: center;
+    font-family: "PP Hatton Medium";
+  }
+
+  .project-description p {
+    margin: 0 0 30px 0;
+  }
+
+  #work p {
+    width: 100%;
+    text-align: left;
+
+    font-size: 1.25rem;
+    line-height: 1.5;
+
+
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.5;
+
+  }
+
+  #work .flex-fill p {
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  .project-link {
+    margin: 40px 0 80px 0;
+    font-size: 1rem;
+    background-color: darkcyan;
+    text-transform: uppercase;
+    color: white;
+    padding: 0.75rem 3.75rem;
+    border-radius: 30px;
+  }
+
+  main .flex-fill {}
+
+
+  /* --------------SKILLS -----------*/
+  #skills {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    background: hsla(184, 46%, 75%, 0.2); 
+    border-radius: 30px;
+  }
+  
+    /* ---------------------- Change Background Color -----*/
+  /* #skills:hover {
+    background: hsla(184, 46%, 75%, 0.6);
+  } */
+
+  #skills .content-wrapper {
+    width: 85%;
+    display: block;
+    text-align: center;
+    margin: 50px 0;
+
+
+  }
+
+  .skills-header {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+  }
+
+
+
+  .skill-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .skill-wrapper p {
+    font-size: 1rem;
+    padding: 20px 0;
+    background-color: #351D77;
+    line-height: 1.5;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+
+  .skill {
+    width: 30%;
+
+  }
+
+  #skills h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    font-family: "PP Hatton Medium";
+    color: #351D77;
+  }
+
+  /* -------- TOOLS ----------*/
+
+  .tool-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+
+  .tool-wrapper p {
+    font-size: 1rem;
+    padding: 20px 0;
+background-color: #351D77;
+    line-height: 1.5;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .tool-wrapper h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    font-family: "PP Hatton Medium";
+    color: #351D77;
+  }
+
+  .tool {
+    width: 30%;
+  }
+
+
+  /* -------------ABOUT ---------*/
+
+  #about {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 100px 0;
+    background: hsla(350,50%,50%,0.4);
+    border-radius: 30px; 
+  }
+  
+  #about:hover {
+    background: hsla(350,50%,50%,0.9);
+    color: ;
+  }
+
+  #about .content-wrapper {
+    width: 85%;
+    display: block;
+    text-align: center;
+
+  }
+
+  .about-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  #about figure {
+    width: 35%;
+    margin: 20px 0 40px 0;
+
+  }
+
+  #profile-image {
+    width: 90%;
+    vertical-align: middle;
+    border-style: none;
+
+
+  }
+
+
+
+  .about-info {
+    font-family: "PP Hatton Medium";
+    width: 58%;
+  }
+
+  #about h3 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+  }
+
+  #about h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  #about p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+  }
+
+  #about span {
+    font-weight: bold;
+    margin: 20px 0;
+
+  }
+}
