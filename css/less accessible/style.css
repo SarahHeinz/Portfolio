@@ -128,13 +128,23 @@ p {
   font-size: .875em;
   line-height: 1.285;
   margin: 0;
+  font-weight: bold;
+  font-family: 'Open-Dyslexic', sans-serif;
 }
 
 img {
   width: 100%;
 }
 
+h3 {
+  font-family: 'Open-Dyslexic', sans-serif;
+  font-size: 2.25rem;
+}
 
+h4 {
+  font-family: 'Open-Dyslexic', sans-serif;
+  font-size: 1.75rem;
+}
 
 main {
   color: #351D77;
@@ -201,7 +211,7 @@ header nav ul li {
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: bold;
- 
+  font-family: 'Open-Dyslexic', sans-serif;
 }
 
 .accessible {
@@ -263,7 +273,62 @@ header nav .dropbtn {
 } */
 
 
-/* ----------- Accessibility Toggle Button --------
+/* ----------- Accessibility Toggle Button --------*/
+
+.switch-container {
+  text-align: center;
+  padding-bottom: 2em;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: 'Open-Dyslexic', sans-serif;
+}
+
+.switch-container p {
+  padding: 0 1em;
+}
+
+.switch-container input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.switch {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+  background-color: #222;
+  border-radius: 34px;
+}
+
+.ball {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.2s ease-out;
+}
+
+.ball.move-right {
+  -webkit-transform: translateX(34px);
+  -ms-transform: translateX(34px);
+  transform: translateX(34px);
+}
+
+body .accesible {
+  color: #474747;
+ background-color: #fff8e3;
+
+}
+
+
+/*
 
 .switch {
   position: relative;
@@ -368,7 +433,7 @@ input.check-toggle-round-flat:checked + label {
 
 input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
-} */
+} */ */
 
 
 header .home-title {
@@ -433,6 +498,7 @@ animation-composition: replace;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Open-Dyslexic', sans-serif;
 }
 .i-title-planet {
 
@@ -465,7 +531,6 @@ footer .content-wrapper {
 
 #contact h3 {
   margin: 0 0 30px 0;
-  font-size: 1.5rem;
   line-height: 1.5;
   width: 100%;
   font-family: "PP Hatton Medium";
@@ -571,7 +636,6 @@ main .content-wrapper {
 
 #work h3 {
   width: 100%;
-  font-size: 2rem;
   text-align: center;
   font-family: "PP Hatton Medium";
 
@@ -621,8 +685,6 @@ main .content-wrapper {
   line-height: 1.5;
   width: 100%;
   text-align: center;
-  font-family: "PP Hatton Medium";
-  font-size: 1.25rem;
 }
 
 .project-description {
@@ -634,12 +696,15 @@ main .content-wrapper {
   text-align: left;
   font-size: 1.25rem;
   line-height: 1.5;
+  font-family: 'Open-Dyslexic', sans-serif;
 }
 
 span {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 1.5;
+  color: #fffb02;
+  text-shadow: 1px 1px #351D77;
 }
 
 #work .flex-fill p {
@@ -654,6 +719,7 @@ span {
   color: white;
   padding: 0.75rem 3.75rem;
   border-radius: 30px;
+  font-family: 'Open-Dyslexic', sans-serif;
 }
 
 main .flex-fill {}
@@ -726,13 +792,13 @@ main .flex-fill {}
 
 
 #skills h4 {
-  font-size: 1.25rem;
+
   font-weight: bold;
   line-height: 1.5;
   margin: 30px 0;
   width: 100%;
   text-align: center;
-  font-family: "PP Hatton Medium";
+  
 }
 
 /* -------- TOOLS ----------*/
@@ -760,13 +826,13 @@ main .flex-fill {}
 }
 
 .tool-wrapper h4 {
-  font-size: 1.25rem;
+
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0;
   width: 100%;
   text-align: center;
-  font-family: "PP Hatton Medium";
+  
 }
 
 
@@ -829,7 +895,6 @@ main .flex-fill {}
 
 #about h3 {
   margin-bottom: 40px;
-  font-size: 1.75rem;
   font-weight: bold;
   line-height: 1.5;
   margin: 0;
@@ -837,7 +902,7 @@ main .flex-fill {}
 }
 
 #about h4 {
-  font-size: 1.25rem;
+
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0;
@@ -1063,7 +1128,6 @@ main .flex-fill {}
     justify-content: flex-end;
     width: 100%;
     margin-bottom: 100px;
-
   }
 
 
@@ -1073,6 +1137,7 @@ main .flex-fill {}
     text-transform: uppercase;
     margin: 20px;
     font-size: 1.5rem;
+    font-family: 'Open-Dyslexic', sans-serif;
   }
 
   header .home-title {
@@ -1305,7 +1370,7 @@ align-items: center;
     line-height: 1.5;
     width: 100%;
     text-align: center;
-    font-family: "PP Hatton Medium";
+
   }
 
   .project-description p {
@@ -1412,13 +1477,13 @@ text-align: center;
   }
 
   #skills h4 {
-    font-size: 1.25rem;
+
     font-weight: bold;
     line-height: 1.5;
     margin: 20px 0;
     width: 100%;
     text-align: center;
-    font-family: "PP Hatton Medium";
+
     color: #351D77;
   }
 
@@ -1445,13 +1510,13 @@ text-align: center;
   }
 
   .tool-wrapper h4 {
-    font-size: 1.25rem;
+
     font-weight: bold;
     line-height: 1.5;
     margin: 20px 0;
     width: 100%;
     text-align: center;
-    font-family: "PP Hatton Medium";
+
     color: #351D77;
   }
 
@@ -1517,7 +1582,7 @@ text-align: center;
 
   #about h3 {
     margin-bottom: 40px;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     line-height: 1.5;
     margin: 0;
@@ -1525,7 +1590,7 @@ text-align: center;
   }
 
   #about h4 {
-    font-size: 1.25rem;
+
     font-weight: bold;
     line-height: 1.5;
     margin: 20px 0;
@@ -1832,7 +1897,7 @@ width: 33%;
     line-height: 1.5;
     width: 100%;
     text-align: center;
-    font-family: "PP Hatton Medium";
+
   }
 
   .project-description p {
@@ -1937,13 +2002,11 @@ width: 33%;
   }
 
   #skills h4 {
-    font-size: 1.25rem;
     font-weight: bold;
     line-height: 1.5;
     margin: 20px 0;
     width: 100%;
     text-align: center;
-    font-family: "PP Hatton Medium";
     color: #351D77;
   }
 
@@ -1970,13 +2033,11 @@ background-color: #351D77;
   }
 
   .tool-wrapper h4 {
-    font-size: 1.25rem;
     font-weight: bold;
     line-height: 1.5;
     margin: 20px 0;
     width: 100%;
     text-align: center;
-    font-family: "PP Hatton Medium";
     color: #351D77;
   }
 
@@ -2042,7 +2103,7 @@ background-color: #351D77;
 
   #about h3 {
     margin-bottom: 40px;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     line-height: 1.5;
     margin: 0;
@@ -2050,7 +2111,6 @@ background-color: #351D77;
   }
 
   #about h4 {
-    font-size: 1.25rem;
     font-weight: bold;
     line-height: 1.5;
     margin: 20px 0;

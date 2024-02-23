@@ -18,6 +18,15 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
+  <!-- ------------FONTS ------------- -->
+  <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">
+
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/open-dyslexic');
+</style>
+
+
+
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -29,10 +38,19 @@
   <header>
 
     <div class="content-wrapper">
+      <div class="switch-container">
+        <p>Complex</p>
+        <label for="toggle" class="switch">
+          <div class="ball"></div>
+        </label>
+        <input id="toggle" name="toggle" type="checkbox" />
+        <p>Accessible</p>
+      </div>
+
         <nav>
           <ul>
             <li>
-              <a href="../Englisch Accessible/accessible/index.html"><span class="accessible">Accessible Version</span></a>
+              <!-- <a href="../Englisch Accessible/accessible/index.html"><span class="accessible">Accessible Version</span></a> -->
               <!-- <div class="switch">
                 <input id="accessibility-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
                 <label for="accessibility-toggle">Accesibility</label>
