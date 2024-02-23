@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="title" content="Sarah Heinzkyll Front End Web Developer Portfolio">
   <title>Sarah Heinzkyll | Portfolio</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/less accessible/style.css">
+  <script src="./js/App.js" defer></script>
+
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -23,8 +26,7 @@
 
   <style>
     @import url('https://fonts.cdnfonts.com/css/open-dyslexic');
-</style>
-
+  </style>
 
 
   <link rel="manifest" href="site.webmanifest">
@@ -36,8 +38,8 @@
 
 <body>
   <header>
-
     <div class="content-wrapper">
+      <div class="settings-container">
       <div class="switch-container">
         <p>Complex</p>
         <label for="toggle" class="switch">
@@ -46,45 +48,35 @@
         <input id="toggle" name="toggle" type="checkbox" />
         <p>Accessible</p>
       </div>
-
+      <div class="language-container">
         <nav>
           <ul>
             <li>
-              <!-- <a href="../Englisch Accessible/accessible/index.html"><span class="accessible">Accessible Version</span></a> -->
-              <!-- <div class="switch">
-                <input id="accessibility-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-                <label for="accessibility-toggle">Accesibility</label>
-                <span class="on">Complex</span>
-                <span class="off">Easy</span> -->
-              <!-- </div> -->
-            </li>
-            <li>
               <a href="../../Spanish/less accessible/index.html"><span class="language">ES</span></a>
-              <!-- <div class="dropdown">
-                <button class="dropbtn">Languages</button>
-                <div class="dropdown-content">
-                  <a href="../../German/less accessible/index.html">Deutsch</a>
-                  <a href="../Spanish/less accessible/index.html">Español</a>
-                </div>
-              </div> -->
-            </li>
-            <li>
-              <a href="../../German/less accessible/index.html"><span class="language">DE</span></a>
-            </li>
-            <li>
-              <a href="#work">projects</a>
-            </li>
-            <li>
-              <a href="#skills">skills</a>
-            </li>
-            <li>
-              <a href="#about">about</a>
-            </li>
-            <li>
-              <a href="#contact" id="contact-link">contact me</a>
-            </li>
-          </ul>
+          </li>
+          <li>
+            <a href="../../German/less accessible/index.html"><span class="language">DE</span></a>
+          </li>
+        </ul>
         </nav>
+      </div>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#work">projects</a>
+          </li>
+          <li>
+            <a href="#skills">skills</a>
+          </li>
+          <li>
+            <a href="#about">about</a>
+          </li>
+          <li>
+            <a href="#contact" id="contact-link">contact me</a>
+          </li>
+        </ul>
+      </nav>
       <div class="home-title">
         <h1>
           Welcome! I'm Sarah Heinzkyll.
