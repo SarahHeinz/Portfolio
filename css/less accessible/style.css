@@ -120,7 +120,7 @@ ol {
 
 a {
   text-decoration: none;
-  color:  #EC91C4;
+  color: #EC91C4;
 }
 
 
@@ -180,39 +180,86 @@ flex-flow: row wrap; */
 
 
 /* ---------------- NAVIGATION -------*/
+/*
 
-header nav {
-  /* justify-content:center;
-width: 45%;
-margin-bottom: 40px;
-flex-flow: row wrap;
-align-items: center; */
-  margin-bottom: 60px;
-  display: block;
-
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #351D77;
+  position: relative;
+  font-family: 'Open-Dyslexic', sans-serif;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: left;
 }
 
-header nav ul {
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+color:  #351D77;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: center;
+  background-color: rgb(67, 228, 228);
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background:  #fffb02;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.languages a {
+  display: inline-block;
+  border-radius: 35px;
+}
+
+.menu{
+  font-family: 'Open-Dyslexic', sans-serif;
+  font-weight: bold;
+}
+
+
+/* header nav ul { */
   /* display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center; */
 
 
-}
 
-header nav ul li {
+
+/* header nav ul li { */
   /* display: flex;
   text-transform: uppercase;
   margin-bottom: 20px;
   flex-flow: column wrap;
   justify-content: space-between; */
-  font-size: .75rem;
+  /* font-size: .75rem;
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: bold;
   font-family: 'Open-Dyslexic', sans-serif;
-}
+} */
 
 /* .accessible {
   color: #52cffe;
@@ -225,18 +272,23 @@ header nav ul li {
 } */
 
 
-
+/* 
 header nav #contact-link {
-  background-color:#EC91C4;
+  background-color: #EC91C4;
   padding: 10px 10px;
   border-radius: 30px;
   color: #351D77;
-}
+} */
 
 
 /* ------------- SETTINGS --------*/
-.setting-container {
-
+/* .settings-container {
+  margin: 0;
+  width: 100%;
+  flex-flow: row wrap;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 
@@ -244,17 +296,17 @@ header nav #contact-link {
 
 
 /* ----------- Accessibility Toggle Button --------*/
-.switch-container {
+/* .switch-container {
   text-align: center;
   padding-bottom: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  
-}
 
-.switch-container p {
+} */
+
+/* .switch-container p {
   padding: 0 1em;
   font-family: 'Open-Dyslexic', sans-serif;
   font-size: 2rem;
@@ -274,9 +326,9 @@ header nav #contact-link {
   height: 34px;
   background-color: #222;
   border-radius: 34px;
-}
+} */
 
-.ball {
+/* .ball {
   position: absolute;
   height: 26px;
   width: 26px;
@@ -294,24 +346,146 @@ header nav #contact-link {
 }
 
 .accessible {
-color: #474747;
- background-color: #fff8e3;
- background-image: none;
-}
+  color: #474747;
+  background-color: #fff8e3;
+  background-image: none;
+} */
 
 /* ------------- LANGUAGE --------*/
-.language-container {
-color: rgb(221, 209, 32);
-border: rgb(221, 209, 32) 2px;
-border-style: solid;
-margin: 0;
-padding: 0;
+/* .language-container {
+  color: rgb(221, 209, 32);
+  border: rgb(221, 209, 32) 2px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 30%;
+  align-items: flex-end;
+} */
+
+
+/* -------------------NAV----------------- */
+
+/* .open-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-screen-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s ease-in-out;
+  display: none;
+  z-index: 9999;
+
+}
+
+.backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.96);
+  animation: fadeIn 0.2s ease-in-out;
+  animation-fill-mode: forwards;
+cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 
+.settings-wrapper ul {
+  z-index: 9965;
+  position: relative;
+}
+
+.settings-wrapper ul li {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 30px;
+  animation: 0.25s ease animateList;
+  animation-fill-mode: forwards;
+  font-family: 'Open-Dyslexic', sans-serif;
+}
+
+ul li:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes animateList {
+
+ 0% {
+    margin-top: -60px;
+    opacity: 0;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+.settings-wrapper ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+  transition: 0.15s ease-in-out;
+}
+
+.settings-wrapp ul li a i {
+  color: var(--light-blue);
+}
+
+.settings-wrapper ul li a:hover {
+  color: var(--light-blue);
+}
 
 
+.fa.solid {
+  font-weight: 900;
+} */
 
+/* .menu-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 5px 20px;
+} */
+
+/* .toggle {
+  background-color: lightblue;
+  outline: 0;
+  margin-top: 15px;
+  padding: 10px 15px;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  font-size: 2em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  background: var(--highlight);
+}
+
+
+.toggle i {
+  color: white;
+} */ */
 
 
 header .home-title {
@@ -350,19 +524,22 @@ header h2 {
 .i-title-wrapper {
   height: 100%;
   animation: move 10s ease-in-out infinite alternate;
-animation-composition: replace;
+  animation-composition: replace;
 }
 
 @keyframes move {
   25% {
     transform: translateY(-50px)
   }
+
   50% {
     transform: translateY(-100px)
   }
+
   75% {
     transform: translateY(-150px)
   }
+
   100% {
     transform: translateY(-200px)
   }
@@ -372,15 +549,16 @@ animation-composition: replace;
   height: 50px;
   font-size: 1.5rem;
   font-weight: bold;
-  color:  rgb(67, 228, 228);
+  color: rgb(67, 228, 228);
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Open-Dyslexic', sans-serif;
 }
+
 .i-title-planet {
 
- 
+
   width: 10%;
   height: auto;
 
@@ -497,10 +675,11 @@ footer .copyright {
   text-align: center;
   width: 100%;
   padding-top: 10px;
-  background: hsla(326, 46%, 75%, 0.2); 
+  background: hsla(326, 46%, 75%, 0.2);
   border-radius: 30px;
 }
-  /* ---------------------- Change Background Color -----*/
+
+/* ---------------------- Change Background Color -----*/
 /*   
 #work:hover {
   background: hsla(326, 46%, 75%, 0.9);
@@ -577,7 +756,7 @@ main .content-wrapper {
   font-family: 'Open-Dyslexic', sans-serif;
 }
 
-span {
+#work span {
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.5;
@@ -612,11 +791,11 @@ main .flex-fill {}
   flex-flow: row wrap;
   width: 100%;
   border-radius: 30px;
-  background: hsla(184, 46%, 75%, 0.2); 
+  background: hsla(184, 46%, 75%, 0.2);
   border-radius: 30px;
 }
 
-  /* ---------------------- Change Background Color -----*/
+/* ---------------------- Change Background Color -----*/
 /* 
 #skills:hover {
   background: hsla(184, 46%, 75%, 0.6);
@@ -676,7 +855,7 @@ main .flex-fill {}
   margin: 30px 0;
   width: 100%;
   text-align: center;
-  
+
 }
 
 /* -------- TOOLS ----------*/
@@ -710,7 +889,7 @@ main .flex-fill {}
   margin: 20px 0;
   width: 100%;
   text-align: center;
-  
+
 }
 
 
@@ -726,13 +905,13 @@ main .flex-fill {}
   flex-flow: row wrap;
   width: 100%;
   padding: 60px 0;
-  
-  background: hsla(350,50%,50%,0.3); 
+
+  background: hsla(350, 50%, 50%, 0.3);
   border-radius: 30px;
 }
 
 #about:hover {
-  background: hsla(350,50%,50%,0.9);
+  background: hsla(350, 50%, 50%, 0.9);
 }
 
 #about .content-wrapper {
@@ -979,10 +1158,11 @@ main .flex-fill {}
     page-break-after: avoid;
   }
 }
+
 /*---------------------------Tablet ---------------*/
 @media only screen and (min-width:768px) {
 
-/* ------------------ HEADER -------------*/
+  /* ------------------ HEADER -------------*/
   header {
     background: #351D77;
     padding-top: 50px;
@@ -999,11 +1179,10 @@ main .flex-fill {}
 
     align-items: flex-end;
     flex-flow: row wrap;
- width: 90%;
+    width: 90%;
   }
 
-  header nav {
-    justify-content: flex-end;
+  /* header nav {
     width: 100%;
     margin-bottom: 100px;
   }
@@ -1016,7 +1195,22 @@ main .flex-fill {}
     margin: 20px;
     font-size: 1.5rem;
     font-family: 'Open-Dyslexic', sans-serif;
+  } */
+
+
+/* ------ NAV -----*/
+
+  .topnav {
+    width: 100%;
+    text-align:left;
   }
+
+.accessibility span {
+  color: #351D77;
+}
+.languages {
+  text-align: left;
+}
 
   header .home-title {
     max-width: 95%;
@@ -1038,49 +1232,54 @@ main .flex-fill {}
     margin: 40px 0 0 0;
     font-size: 2rem;
   }
+
   i-title {
     height: 50px;
     overflow: hidden;
   }
-  
+
   .i-title-wrapper {
     height: 100%;
     animation: move 10s ease-in-out infinite alternate;
-  animation-composition: replace;
+    animation-composition: replace;
   }
-  
+
   @keyframes move {
     25% {
       transform: translateY(-50px)
     }
+
     50% {
       transform: translateY(-100px)
     }
+
     75% {
       transform: translateY(-150px)
     }
+
     100% {
       transform: translateY(-200px)
     }
   }
-  
+
   .i-title-item {
     height: 50px;
     font-size: 1.5rem;
     font-weight: bold;
-    color:  rgb(67, 228, 228);
+    color: rgb(67, 228, 228);
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .i-title-planet {
-  
-   
+
+
     width: 8%;
     height: auto;
-  
+
   }
-  
+
 
   /* ---------- FOOTER -------*/
   footer {
@@ -1119,7 +1318,7 @@ main .flex-fill {}
   footer .contact-info {
     margin: 30px 0 30px 0;
     display: block;
-width: 33%;
+    width: 33%;
   }
 
   footer .contact-info-follow {
@@ -1128,7 +1327,7 @@ width: 33%;
     flex-flow: row wrap;
     justify-content: center;
     margin: 30px 0 30px 0;
-    color:#EC91C4;
+    color: #EC91C4;
   }
 
   footer .contact-title {
@@ -1142,7 +1341,7 @@ width: 33%;
     display: flex;
     justify-content: space-around;
     text-align: center;
-   width: 12.5em;
+    width: 12.5em;
   }
 
   footer .social-icons li {
@@ -1150,11 +1349,12 @@ width: 33%;
     height: 40px;
     display: flex;
     justify-content: center;
-  
+
   }
-  footer ul  {
-flex-direction: row;
-align-items: center;
+
+  footer ul {
+    flex-direction: row;
+    align-items: center;
   }
 
   footer p {
@@ -1167,7 +1367,8 @@ align-items: center;
     height: 30%;
     width: 100%;
   }
- /* -------------MAIN-------------------*/
+
+  /* -------------MAIN-------------------*/
 
   /* -----------------PROJECTS--------------*/
 
@@ -1179,7 +1380,7 @@ align-items: center;
     text-align: center;
     width: 100%;
     padding-top: 60px;
-    background: hsla(326, 46%, 75%, 0.2); 
+    background: hsla(326, 46%, 75%, 0.2);
     border-radius: 30px;
   }
 
@@ -1187,7 +1388,7 @@ align-items: center;
   /* #work:hover {
     background: hsla(326, 46%, 75%, 0.9);
   } */
-  
+
   main .content-wrapper {
     width: 85%;
     text-align: center;
@@ -1231,7 +1432,7 @@ align-items: center;
     margin: 20px 0 40px 0;
     text-align: center;
     filter: drop-shadow(1px 2px 6px blue);
- 
+
   }
 
   .portfolio-project img {
@@ -1285,7 +1486,7 @@ align-items: center;
     color: white;
     padding: 0.75rem 3.75rem;
     border-radius: 30px;
-text-align: center;
+    text-align: center;
   }
 
   main .flex-fill {}
@@ -1299,12 +1500,12 @@ text-align: center;
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
-    background: hsla(184, 46%, 75%, 0.2); 
+    background: hsla(184, 46%, 75%, 0.2);
     border-radius: 30px;
   }
 
   /* ---------------------- Change Background Color -----*/
-/* #skills:hover {
+  /* #skills:hover {
   background: hsla(184, 46%, 75%, 0.9);
 } */
 
@@ -1381,7 +1582,7 @@ text-align: center;
   .tool-wrapper p {
     font-size: 1rem;
     padding: 20px 0;
-    background-color:#351D77;
+    background-color: #351D77;
     line-height: 1.5;
     text-align: center;
     margin: 20px 0;
@@ -1413,14 +1614,14 @@ text-align: center;
     flex-flow: row wrap;
     width: 100%;
     padding: 100px 0;
-    background: hsla(350,50%,50%,0.3);
-    border-radius: 30px; 
+    background: hsla(350, 50%, 50%, 0.3);
+    border-radius: 30px;
   }
-  
+
   #about:hover {
-    background: hsla(350,50%,50%,0.9);
+    background: hsla(350, 50%, 50%, 0.9);
   }
-  
+
 
   #about .content-wrapper {
     width: 100%;
@@ -1518,14 +1719,18 @@ text-align: center;
     flex-flow: column wrap;
   }
 
-  header nav {
+  .topnav {
+    width: 100%;
+  }
+
+  /* header nav {
     justify-content: flex-end;
     width: 100%;
     margin-bottom: 100px;
   }
 
   .dropdown-content {
-  
+
     position: absolute;
 
   }
@@ -1536,7 +1741,7 @@ text-align: center;
     text-transform: uppercase;
     margin: 0 0 0 20px;
     font-size: 1.25rem;
-  }
+  } */
 
   header .home-title {
     max-width: 95%;
@@ -1563,45 +1768,49 @@ text-align: center;
     height: 50px;
     overflow: hidden;
   }
-  
+
   .i-title-wrapper {
     height: 100%;
     animation: move 10s ease-in-out infinite alternate;
-  animation-composition: replace;
+    animation-composition: replace;
   }
-  
+
   @keyframes move {
     25% {
       transform: translateY(-50px)
     }
+
     50% {
       transform: translateY(-100px)
     }
+
     75% {
       transform: translateY(-150px)
     }
+
     100% {
       transform: translateY(-200px)
     }
   }
-  
+
   .i-title-item {
     height: 50px;
     font-size: 2.25rem;
     font-weight: bold;
-    color:  rgb(67, 228, 228);
+    color: rgb(67, 228, 228);
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .i-title-planet {
-  display: inline;
-   
+    display: inline;
+
     width: 5%;
     height: auto;
-  
+
   }
-  
+
 
   /* --------------MAIN--------*/
 
@@ -1645,17 +1854,17 @@ text-align: center;
   footer .contact-info {
     margin: 80px 0 80px 0;
     display: block;
-width: 33%;
+    width: 33%;
   }
 
   footer .contact-info-follow {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    color:#EC91C4;
+    color: #EC91C4;
     margin: 80px 0 80px 0;
 
-width: 33%;
+    width: 33%;
   }
 
   footer .contact-title {
@@ -1671,7 +1880,7 @@ width: 33%;
     display: flex;
     justify-content: space-around;
     text-align: center;
-  
+
   }
 
   footer .social-icons li {
@@ -1705,15 +1914,15 @@ width: 33%;
     text-align: center;
     width: 100%;
     padding-top: 80px;
-    background: hsla(326, 46%, 75%, 0.2); 
+    background: hsla(326, 46%, 75%, 0.2);
     border-radius: 30px;
   }
-  
-    /* ---------------------- Change Background Color -----*/
+
+  /* ---------------------- Change Background Color -----*/
   /* #work:hover {
     background: hsla(326, 46%, 75%, 0.9);
   } */
-  
+
   main .content-wrapper {
     width: 85%;
     text-align: center;
@@ -1825,11 +2034,11 @@ width: 33%;
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
-    background: hsla(184, 46%, 75%, 0.2); 
+    background: hsla(184, 46%, 75%, 0.2);
     border-radius: 30px;
   }
-  
-    /* ---------------------- Change Background Color -----*/
+
+  /* ---------------------- Change Background Color -----*/
   /* #skills:hover {
     background: hsla(184, 46%, 75%, 0.6);
   } */
@@ -1904,7 +2113,7 @@ width: 33%;
   .tool-wrapper p {
     font-size: 1rem;
     padding: 20px 0;
-background-color: #351D77;
+    background-color: #351D77;
     line-height: 1.5;
     text-align: center;
     margin: 20px 0;
@@ -1934,13 +2143,13 @@ background-color: #351D77;
     flex-flow: row wrap;
     width: 100%;
     padding: 100px 0;
-    background: hsla(350,50%,50%,0.4);
-    border-radius: 30px; 
+    background: hsla(350, 50%, 50%, 0.4);
+    border-radius: 30px;
   }
-  
+
   #about:hover {
-    background: hsla(350,50%,50%,0.9);
-    color: ;
+    background: hsla(350, 50%, 50%, 0.9);
+    color: blue;
   }
 
   #about .content-wrapper {
