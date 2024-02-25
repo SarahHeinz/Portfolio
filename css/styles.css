@@ -187,10 +187,10 @@ header .content-wrapper {
     position: relative;
     font-family: 'Open-Dyslexic', sans-serif;
     font-weight: bold;
+    margin-bottom: 70px;
+    text-align: left;
   }
   
-  
-  }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #myLinks {
@@ -202,7 +202,7 @@ header .content-wrapper {
   color:  #351D77;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.2rem;
     display: block;
     text-align: center;
     background-color: rgb(67, 228, 228);
@@ -215,10 +215,10 @@ header .content-wrapper {
     position: absolute;
     right: 0;
     top: 0;
-    
+    margin-right: 5px;
+    border-radius: 10px;
   }
   
-  /* Add a grey background color on mouse-over */
   
   
   /* Style the active link (or home/logo) */
@@ -237,71 +237,9 @@ header .content-wrapper {
     font-weight: bold;
   }
 
+/* ---ACCESSIBILITY BUTTON ---*/
 
-
-
-/*
-  
-  /* Style the navigation menu
-.topnav {
-    overflow: hidden;
-    background-color: #351D77;
-    position: relative;
-    font-family: 'Open-Dyslexic', sans-serif;
-    font-weight: bold;
-    margin-bottom: 50px;
-    text-align: left;
-}
-
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-/* .topnav #myLinks {
-    display: none;
-} */
-
-/* Style navigation menu links */
-/* .topnav a {
-    color: #351D77;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    display: block;
-    text-align: center;
-    background-color: rgb(67, 228, 228);
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-    background: #fffb02;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-radius: 10px;
-    text-align: center;
-    margin-right: 5px;
-}
-
-/* Style the active link (or home/logo) */
-.active {
-    background-color: #04AA6D;
-    color: white;
-}
-
-.languages a {
-    display: inline-block;
-    border-radius: 35px;
-}
-
-.menu {
-    font-family: 'Open-Dyslexic', sans-serif;
-    font-weight: bold;
-}
-
- */
-
-/* CSS */
-/* button {
+button {
   align-items: center;
   background-color: rgb(67, 228, 228);
 border:none;
@@ -331,7 +269,7 @@ border-radius: 35px;
 
 button:hover,
 button:focus { 
-  background-color: rgb(67, 228, 228);
+  background-color: #fffb02;
   color: #351D77;
 }
 
@@ -344,7 +282,13 @@ button:disabled {
   cursor: not-allowed;
   background:rgb(67, 228, 228);
   color: rgba(0, 0, 0, .3);
-}  */
+} 
+
+.add-accesibility {
+    /* background-color: #e8e1db; */
+    color: #2b2c2c;
+    background-color: #eae4dd;
+}
 
 
 header .home-title {
@@ -1049,7 +993,7 @@ main .flex-fill {}
         text-align: left;
     }
 
-    .accessibility span {
+    .language span {
         color: #351D77;
     }
 
