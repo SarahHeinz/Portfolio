@@ -12,11 +12,20 @@ function myFunction() {
 
 
 // ----------ACCESSIBILITY BUTTON
-const accessible = document.querySelector (".accessible");
-// const accessibility = document.querySelector(".accessibility");
-const body = document.querySelector("complex");
 
-accessible.addEventListener('click', () => body.classList.add('add-accessibility'));
+// const accessible = document.querySelector(".accessible");
+// const accessibility = document.querySelector(".accessibility");
+// const complex = document.querySelector(".complex");
+// const headingMain = document.querySelector("h1");
+// const menu = document.querySelector(".topnav");
+// const links = document.querySelector("a");
+// const headingMedium = document.querySelector("h3");
+
+// accessible.addEventListener('click', () => {complex.classList.add('add-accessibility'));
+// headingMain.classList.add('add-accessibility')});
+
+// console.log(links);
+// console.log(headingMedium);
 
 
 // accessibility.addEventlistener("click", function () {

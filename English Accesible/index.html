@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="title" content="Sarah Heinzkyll Front End Web Developer Portfolio">
   <title>Sarah Heinzkyll | Portfolio</title>
-  <link rel="stylesheet" href="./css/normalize.css" />
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/styles-accessible.css">
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="./js/App.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../js/App.js" defer></script>
 
   <meta name="description" content="">
 
@@ -42,54 +42,56 @@
 <!-- HEADER -->
 
 <body>
-  <header>
+  <header class="complex">
     <div class="content-wrapper">
 
-      <!-- Top Navigation Menu -->
       <div class="topnav">
         <div class="languages">
-          <a href="../Spanish/index.html" class="active">ES</a>
-          <a href="../index.html" class="active">EN</a>
-          <a href="../German/index.html" class="active">Komplex</a>
+        <a href="../Spanish/index.html" class="active">ES</a>
+        <a href="../German/index.html" class="active">DE</a>   
+        <a href="../index.html" class="active">Complex</a> 
+          <!-- <a href="#home" class="active"><span class="accesibility">Plain</span></a> -->
         </div>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-          <a href="#work">Projekte</a>
+          <a href="#work">Projects</a>
           <a href="#skills">Skills</a>
-          <a href="#about">Über mich</a>
-          <a href="#">Werte</a>
-          <a href="#contact">Kontakt</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact Me</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"> <span class="menu"> Menü </span> </i>
+          <i class="fa fa-bars"> <span class="menu"> Menu </span> </i>
         </a>
-      </div>
+      </div> 
+
+      <!-------- HOME TITLE ----------------->
+
       <div class="home-title">
         <h1>
-          Hi! Ich bin Sarah Heinzkyll.
+          Hello! <br> I am Sarah Heinzkyll.
         </h1>
         <h2>
-          Front End Developerin
+          Front End Developer
         </h2>
         <div class="i-title">
           <div class="i-title-wrapper">
             <div class="i-title-item">
-              Transparenz
+              Transparency
             </div>
             <div class="i-title-item">
-              Wissensaustausch
+              Knowledge Sharing
             </div>
             <div class="i-title-item">
-              Zugänglichkeit
+              Accessibility
             </div>
             <div class="i-title-item">
-              Gemeinschaft
+              Community
             </div>
             <div class="i-title-item">
-              <p>Queeres</p>
-              <img class="i-title-planet" src="./img/planet.png" alt="planet">
-              <p>Glück</p>
+              <p>Queer</p>
+              <img class="i-title-planet" src="../img/planet.png" alt="planet">
+              <p>Joy</p>
             </div>
           </div>
         </div>
@@ -116,9 +118,9 @@
             <div class="portfolio-project">
               <figure>
                 <a href="https://sarahheinz.github.io/Guess-the-Word-Game/" target="_blank"><img
-                    src="./img/guess-the-word2.png" alt="Guess the Word Game"></a>
+                    src="../img/guess-the-word2.png" alt="Guess the Word Game"></a>
               </figure>
-              <h4>"Rate das Wort"-Spiel</h4>
+              <h4>Guess the Word Game</h4>
               <p class="project-description">
                 It’s a game, written with Javascript, in which the players guess one letter each round until they
                 can guess the hidden word. If the player guesses all the letters correctly before they use up their
@@ -139,9 +141,9 @@
             <div class="portfolio-project">
               <figure>
                 <a href="https://github.com/SarahHeinz/Github_Repo_Gallery" target="_blank"><img
-                    src="./img/repo-gallery2.png" alt="GitHub Repo Gallery"></a>
+                    src="../img/repo-gallery2.png" alt="GitHub Repo Gallery"></a>
               </figure>
-              <h4>GitHub Repo Gallerie</h4>
+              <h4>GitHub Repo Gallery</h4>
               <p class="project-description">
                 My project uses Javascript and APIs to create a gallery of repos by pulling data from my GitHub
                 page.
@@ -162,7 +164,7 @@
             <div class="portfolio-project">
               <figure>
                 <a href="https://github.com/SarahHeinz/unplugged-website" target="_blank"><img
-                    src="./img/unplugged2.png" alt="Unplugged Website"></a>
+                    src="../img/unplugged2.png" alt="Unplugged Website"></a>
               </figure>
               <h4>Unplugged Website</h4>
               <p class="project-description">
@@ -184,9 +186,9 @@
             <div class="portfolio-project">
               <figure>
                 <a href="https://codesandbox.io/p/sandbox/sticky-notes-final-vy958y" target="_blank"><img
-                    src="./img/sticky-notes2.png" alt="Sticky Notes App"></a>
+                    src="../img/sticky-notes2.png" alt="Sticky Notes App"></a>
               </figure>
-              <h4>Notiz-App</h4>
+              <h4>Sticky Notes App</h4>
               <p class="project-description">This interactive React app allows users to create their own “sticky
                 notes” as well as edit and delete them and search their to-do list items.</p>
               <p>
@@ -204,9 +206,9 @@
             <div class="portfolio-project">
               <figure>
                 <a href="https://codesandbox.io/p/sandbox/name-tag-generator-f6wt3x" target="_blank"><img
-                    src="./img/name-tag-generator2.png" alt="Name Tag Generator"></a>
+                    src="../img/name-tag-generator2.png" alt="Name Tag Generator"></a>
               </figure>
-              <h4>Namensschild-Generator</h4>
+              <h4>Name Tag Generator</h4>
               <p class="project-description">Using JSX, functional components and ES6 modules, I built a name tag
                 generator to create fast and easy name tags for your whole team.</p>
               <p>
@@ -254,11 +256,11 @@
       <div class="content-wrapper">
         <div class="about-content-wrapper">
           <figure>
-            <img id="profile-image" src="./img/about-me5.jpg" alt="profile-image">
+            <img id="profile-image" src="../img/about-me5.jpg" alt="profile-image">
             <p class="artist">Foto: Thanks to Sol! IG @fotounsol.</p>
           </figure>
           <div class="about-info">
-            <h3>Hi! Ich bin Sarah Heinzkyll.</h3>
+            <h3>Hola! I am Sarah Heinzkyll.</h3>
             <h4>I am a front end Developer...</h4>
 
             <p class="about-text">
@@ -288,28 +290,28 @@
   <footer id="contact">
     <div class="content-wrapper">
 
-      <h3>Ich freue mich darauf deine Ideen zu visualisieren.</h3>
+      <h3>Looking forward to hearing from you!</h3>
       <div class="contact-wrapper">
         <div class="contact-info">
           <!-- Contact data -->
-          <h5 class="contact-title">Kontakt</h5>
+          <h5 class="contact-title">Contact me</h5>
           <p>+34 643276586</p>
           <p>sarah.heinzkyll@gmx.de</p>
         </div>
 
         <div class="contact-info-follow">
           <!-- Social Media  -->
-          <h5 class="contact-title">Folge mir</h5>
+          <h5 class="contact-title">Follow me</h5>
           <ul class="social-icons">
             <li>
               <a href="https://www.linkedin.com/in/sarah-heinzkyll-b2b3882b1/" target="_blank">
                 <!-- /* LinkedIn Logo <img src="" alt="">*/ -->
-                <img src="./img/linkedin.svg" alt="linkedin logo"></a>
+                <img src="../img/linkedin.svg" alt="linkedin logo"></a>
             </li>
             <li>
               <a href="https://github.com/SarahHeinz">
                 <!-- /* GitHub Logo <img src="" alt=""> */ -->
-                <img src="./img/github.svg" alt="github logo"></a>
+                <img src="../img/github.svg" alt="github logo"></a>
             </li>
           </ul>
         </div>
@@ -317,7 +319,7 @@
 
         <div class="contact-info">
           <!-- Contact location -->
-          <h5 class="contact-title">Komm vorbei.</h5>
+          <h5 class="contact-title">Let's meet up?</h5>
           <p>Sierra de Gredos, Spain</p>
         </div>
       </div>
