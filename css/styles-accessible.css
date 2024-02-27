@@ -331,54 +331,6 @@ header h2 {
     padding: 2px 5px 0 5px;
 }
 
-.i-title {
-    height: 50px;
-    overflow: hidden;
-}
-
-.i-title-wrapper {
-    height: 100%;
-    animation: move 10s ease-in-out infinite alternate;
-    animation-composition: replace;
-}
-
-@keyframes move {
-    25% {
-        transform: translateY(-50px)
-    }
-
-    50% {
-        transform: translateY(-100px)
-    }
-
-    75% {
-        transform: translateY(-150px)
-    }
-
-    100% {
-        transform: translateY(-200px)
-    }
-}
-
-.i-title-item {
-    height: 50px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-color: #2b2c2c;
-    color: #eae4dd;
-    font-family: 'Open-Dyslexic', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Open-Dyslexic', sans-serif;
-}
-
-.i-title-planet {
-
-    width: 10%;
-    height: auto;
-
-}
 
 /*footer*/
 footer {
@@ -601,10 +553,6 @@ main .flex-fill {}
 }
 
 /* ---------------------- Change Background Color -----*/
-/* 
-  #skills:hover {
-    background: hsla(184, 46%, 75%, 0.6);
-  } */
 
 
 #skills .content-wrapper {
@@ -787,6 +735,66 @@ main .flex-fill {}
 
 }
 
+
+/* -------- VALUES ------- */
+#values {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #eae4dd;
+    border-radius: 30px;
+    border: #2b2c2c 3px solid;
+}
+
+/* ---------------------- Change Background Color -----*/
+
+
+#values .content-wrapper {
+    width: 85%;
+    display: block;
+    text-align: center;
+    margin: 50px 0;
+
+
+}
+
+.values-header {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+    font-family: "PP Hatton Medium";
+}
+
+
+
+.values-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.values-wrapper p {
+    font-size: 1rem;
+    padding: 20px 0;
+    line-height: 1.5;
+    text-align: center;
+    margin: 20px 0;
+    width: 90%;
+    background-color: #2b2c2c;
+    color: #eae4dd;
+    font-weight: bold;
+}
 
 
 

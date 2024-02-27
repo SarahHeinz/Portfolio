@@ -238,7 +238,7 @@ header .content-wrapper {
   }
 
 /* ---ACCESSIBILITY BUTTON ---*/
-
+/* 
 button {
   align-items: center;
   background-color: rgb(67, 228, 228);
@@ -286,10 +286,10 @@ button:disabled {
 
 .add-accessibility {
     /* background-color: #e8e1db; */
-    color: #2b2c2c;
+    /* color: #2b2c2c;
     background-color: #eae4dd;
     font-family: 'Open-Dyslexic', sans-serif;
-}
+} */ 
 
 
 header .home-title {
@@ -449,7 +449,6 @@ footer p {
     font-size: 1.25rem;
     margin: 0;
     line-height: 1.5;
-    font-family: Arial, Helvetica, sans-serif;
     color: #EC91C4;
 }
 
@@ -458,13 +457,11 @@ footer p {
 
 footer {
     background: #351D77;
-    font-family: "PP Hatton Medium";
 }
 
 footer .copyright {
     font-style: italic;
     padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -557,7 +554,6 @@ main .content-wrapper {
     text-align: left;
     font-size: 1.25rem;
     line-height: 1.5;
-    font-family: 'Open-Dyslexic', sans-serif;
 }
 
 #work span {
@@ -580,7 +576,6 @@ main .content-wrapper {
     color: white;
     padding: 0.75rem 3.75rem;
     border-radius: 30px;
-    font-family: 'Open-Dyslexic', sans-serif;
 }
 
 main .flex-fill {}

@@ -9,7 +9,7 @@
   <meta name="title" content="Sarah Heinzkyll Front End Web Developer Portfolio">
   <title>Sarah Heinzkyll | Portfolio</title>
   <link rel="stylesheet" href="../css/normalize.css" />
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/styles-accessible.css">
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="../js/App.js" defer></script>
@@ -50,15 +50,15 @@
         <div class="languages">
           <a href="../index.html" class="active">EN</a>
           <a href="../Spanish/index.html" class="active">ES</a>
-          <button onclick="myFunction()">Leichte Sprache</button>
+          <a href="../German/index.html" class="active">Komplex</a>
         </div>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-          <a href="#work">Projekte</a>
-          <a href="#skills">Kompetenzen</a>
-          <a href="#about">Über mich</a>
-          <a href="#">Werte</a>
-          <a href="#contact">Kontakt</a>
+          <a href="#work">Hier sind meine Projekten.</a>
+          <a href="#skills">Hier sind meine Fähigkeiten./ Was kann ich gut?</a>
+          <a href="#about">Informationen zu mir</a>
+          <a href="#values">Was ist mir wichtig?</a>
+          <a href="#contact">Melden Sie sich gerne bei mir.</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -70,29 +70,8 @@
           Hallo! Ich bin Sarah Heinzkyll.
         </h1>
         <h2>
-          Front End Developerin
+          Ich erstelle Webseiten und Apps.
         </h2>
-        <div class="i-title">
-          <div class="i-title-wrapper">
-            <div class="i-title-item">
-              Transparenz
-            </div>
-            <div class="i-title-item">
-              Wissensaustausch
-            </div>
-            <div class="i-title-item">
-              Zugänglichkeit
-            </div>
-            <div class="i-title-item">
-              Gemeinschaft
-            </div>
-            <div class="i-title-item">
-              <p>Queeres</p>
-              <img class="i-title-planet" src="../img/planet.png" alt="planet">
-              <p>Glück</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </header>
@@ -109,7 +88,7 @@
         <!-- Projects and Descriptions -->
         <div class="content-wrapper">
 
-          <h3 class="portfolio-header">Projekte</h3>
+          <h3 class="portfolio-header">Hier sind meine Projekten.</h3>
 
           <!-- List of all the projects -->
           <div class="portfolio-wrapper">
@@ -229,8 +208,8 @@
       <section id="skills">
         <!-- /* Developer Skills & Tech Stack */ -->
         <div class="content-wrapper">
-          <h3 class="skills-header">Skills</h3>
-          <h4>Developer Skills</h4>
+          <h3 class="skills-header">Hier sind meine Fähigkeiten./ Was kann ich gut?</h3>
+          <h4>Ich habe diese Fähigkeiten. </h4>
           <div class="skill-wrapper">
             <p class="skill"> CSS3 </p>
             <p class="skill">HTML5</p>
@@ -238,7 +217,7 @@
             <p class="skill">Javascript (ES6) </p>
             <p class="skill">JSX</p>
           </div>
-          <h4>Tech Stack</h4>
+          <h4>Ich kann diese Tools benutzen.</h4>
           <div class="tool-wrapper">
             <p class="tool">Git & GitHub</p>
             <p class="tool">Visual Studio Code</p>
@@ -255,7 +234,7 @@
         <div class="about-content-wrapper">
           <figure>
             <img id="profile-image" src="../img/about-me5.jpg" alt="profile-image">
-            <p class="artist">Foto: Thanks to Sol! IG @fotounsol.</p>
+            <p class="artist">Ich danke Sol für das Foto. <br> IG @fotounsol.</p>
           </figure>
           <div class="about-info">
             <h3>Hi! Ich bin Sarah Heinzkyll.</h3>
@@ -278,8 +257,26 @@
         </div>
       </div>
     </section>
-
-
+    <section id="values">
+      <div class="content-wrapper">
+        <h3 class="values-header">Was ist wichtig für mich?</h3>
+        <div class="values-wrapper">
+        <p class="value">
+          Transparenz ist mir wichtig.
+        </p>
+        <p class="value">
+         Ich möchte Wissen teilen.
+        </p>
+        <p class="value">
+          Zugang für alle ist mir wichtig.
+        </p>
+        <p class="value">
+          Gemeinschaft ist mir wichtig.
+        </p>
+        <p class="value">
+          Queeres Glück ist mir wichtig.
+        </p>
+    </section>
   </main>
 
 
@@ -288,18 +285,18 @@
   <footer id="contact">
     <div class="content-wrapper">
 
-      <h3>Ich freue mich darauf deine Ideen zu visualisieren.</h3>
+      <h3>Ich freue mich auf Ihre Ideen. Und ich möchte sie umsetzen.</h3>
       <div class="contact-wrapper">
         <div class="contact-info">
           <!-- Contact data -->
-          <h5 class="contact-title">Kontakt</h5>
-          <p>+34 643276586</p>
+          <h5 class="contact-title">Melden Sie sich gerne bei mir.</h5>
+          <p>00 34 64 32 76 58 6</p>
           <p>sarah.heinzkyll@gmx.de</p>
         </div>
 
         <div class="contact-info-follow">
           <!-- Social Media  -->
-          <h5 class="contact-title">Folge mir</h5>
+          <h5 class="contact-title">Meine sozialen Medien</h5>
           <ul class="social-icons">
             <li>
               <a href="https://www.linkedin.com/in/sarah-heinzkyll-b2b3882b1/" target="_blank">
