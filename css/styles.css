@@ -231,72 +231,13 @@ header .content-wrapper {
     border-radius: 35px;
   }
   
-  .menu{
+  .menu {
     font-family: 'Open-Dyslexic', sans-serif;
     font-weight: bold;
   }
 
-/* ---ACCESSIBILITY BUTTON ---*/
-/* 
-button {
-  align-items: center;
-  background-color: rgb(67, 228, 228);
-border:none;
-border-radius: 35px;
-  box-sizing: border-box;
-  color: #351D77;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 20px;
-  max-width: 480px;
-  min-height: 40px;
-  min-width: 0px;
-  overflow: hidden;
-  text-align: center;
-  touch-action: manipulation;
-  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
-  font-family: 'Open-Dyslexic', sans-serif;
-  padding: 14px 16px;
-}
-
-button:hover,
-button:focus { 
-  background-color: #fffb02;
-  color: #351D77;
-}
-
-button:active {
-  background: #fffb02;
-  color: #351D77;
-}
-
-button:disabled { 
-  cursor: not-allowed;
-  background:rgb(67, 228, 228);
-  color: rgba(0, 0, 0, .3);
-} 
-
-.add-accessibility {
-    /* background-color: #e8e1db; */
-    /* color: #2b2c2c;
-    background-color: #eae4dd;
-    font-family: 'Open-Dyslexic', sans-serif;
-} */ 
-
 
 header .home-title {
-    /* max-width: 95%;
-  display: flex;
-  flex-flow:row wrap;
-  justify-content: center;
-  align-items: center; */
     display: block;
 }
 
@@ -722,13 +663,11 @@ main .flex-fill {}
     border-style: none;
     /* margin: 0; */
 }
-
-.artist-wrapper {
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 60%;
+#about .about-info h4 {
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0 0 40px 0;
+    width: 100%;
     text-align: center;
 }
 
@@ -1048,7 +987,6 @@ main .flex-fill {}
         border-radius: 30px;
     }
 
-    footer #contact {}
 
     footer .content-wrapper {
         width: 85%;
@@ -1375,16 +1313,15 @@ main .flex-fill {}
         border-radius: 30px;
     }
 
-    #about:hover {
+    /* #about:hover {
         background: hsla(350, 50%, 50%, 0.9);
-    }
+    } */
 
 
     #about .content-wrapper {
         width: 85%;
         display: block;
         text-align: center;
-
     }
 
     .about-content-wrapper {
@@ -1397,20 +1334,16 @@ main .flex-fill {}
     #about figure {
         width: 60%;
         margin: 20px 0 40px 0;
-
     }
 
     #profile-image {
         width: 90%;
         vertical-align: middle;
         border-style: none;
-
-
     }
 
     #about .about-info {
         align-items: center;
-  
     }
 
     #about h3 {
@@ -1423,7 +1356,6 @@ main .flex-fill {}
     }
 
     #about h4 {
-
         font-weight: bold;
         line-height: 1.5;
         margin: 0 0 60px 0;
@@ -1441,8 +1373,69 @@ main .flex-fill {}
 
     #about span {
         font-weight: bold;
+    }
+
+
+    /* -----VALUES------- */
+
+    #values {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    #values .content-wrapper {
+        width: 85%;
+        display: block;
+        text-align: center;
+        margin: 50px 0;
+        border-radius: 30px;
 
     }
+
+    .values-header {
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 1.5;
+        margin: 0;
+        text-align: center;
+    }
+
+    .values-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 100%;
+        text-align: center;
+    }
+
+    .values-wrapper p {
+        font-size: 1rem;
+        padding: 20px 0;
+        line-height: 1.5;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    #values .value {
+        width: 45%;
+    }
+
+    #values h4 {
+
+        font-weight: bold;
+        line-height: 1.5;
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+
 }
 
 /* -------------MAIN-------------------*/
@@ -1595,7 +1588,6 @@ main .flex-fill {}
         justify-content: center;
         color: #EC91C4;
         margin: 80px 0 80px 0;
-
         width: 33%;
     }
 
@@ -1612,7 +1604,6 @@ main .flex-fill {}
         display: flex;
         justify-content: space-around;
         text-align: center;
-
     }
 
     footer .social-icons li {
@@ -1622,7 +1613,6 @@ main .flex-fill {}
         justify-content: center;
         align-items: center;
         margin: 0 10px;
-
     }
 
     footer p {
@@ -1664,7 +1654,6 @@ main .flex-fill {}
         font-size: 3rem;
         text-align: center;
         font-family: "PP Hatton Medium";
-
     }
 
 
@@ -1676,7 +1665,6 @@ main .flex-fill {}
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-
         text-align: center;
         align-items: start;
         /* align-items: stretch;*/
@@ -1724,11 +1712,8 @@ main .flex-fill {}
     #work p {
         width: 100%;
         text-align: left;
-
         font-size: 1.25rem;
         line-height: 1.5;
-
-
     }
 
     span {
@@ -1778,8 +1763,6 @@ main .flex-fill {}
         display: block;
         text-align: center;
         margin: 50px 0;
-
-
     }
 
     .skills-header {
@@ -1873,18 +1856,17 @@ main .flex-fill {}
         align-items: center;
         flex-flow: row wrap;
     }
-
+/* 
     #about:hover {
         background: hsla(350, 50%, 50%, 0.9);
         color: blue;
-    }
+    } */
 
     #about .content-wrapper {
         max-width: 1450px;
         display: block;
         text-align: center;
         width: 85%;
-
     }
 
     .about-content-wrapper {
@@ -1896,15 +1878,12 @@ main .flex-fill {}
     #about figure {
         width: 40%;
         margin-top: 40px;
-
     }
 
     #profile-image {
         width: 90%;
         vertical-align: middle;
         border-style: none;
-
-
     }
 
 
@@ -1940,7 +1919,7 @@ main .flex-fill {}
     }
 
     #about .about-text {
-        margin: 0 0 30pc 0;
+        margin: 0 0 30px 0;
         font-size: 1.25rem;
     }
 
