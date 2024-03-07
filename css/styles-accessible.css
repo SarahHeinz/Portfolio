@@ -1323,7 +1323,7 @@ main .flex-fill {}
     }
 
     #about figure {
-        width: 60%;
+        width: 50%;
         margin: 20px 0 40px 0;
     }
 
@@ -1799,7 +1799,7 @@ main .flex-fill {}
     }
 
     #about figure {
-        width: 40%;
+        width: 50%;
         margin-top: 40px;
     }
 
@@ -1812,7 +1812,7 @@ main .flex-fill {}
 
 
     #about .about-info {
-        width: 58%;
+        width: 50%;
     }
 
     #about .about-info h3 {
