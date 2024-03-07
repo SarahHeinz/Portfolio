@@ -106,7 +106,6 @@ body {
     font-size: 1em;
     background-color: #2b2c2c;
     font-family: 'Open-Dyslexic', sans-serif;
-    text-align: left;
 }
 
 ul,
@@ -507,8 +506,6 @@ main .flex-fill {}
     display: block;
     text-align: center;
     margin: 50px 0;
-
-
 }
 
 .skills-header {
@@ -625,7 +622,14 @@ main .flex-fill {}
     /* vertical-align: middle; */
     border-style: none;
 }
-
+#about .about-info h4 {
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0 0 40px 0;
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+}
 
 
 #about h3 {
@@ -636,13 +640,6 @@ main .flex-fill {}
     font-size: 2rem;
 }
 
-#about .about-info h4 {
-    font-weight: bold;
-    line-height: 1.5;
-    margin: 0 0 40px 0;
-    width: 100%;
-    text-align: center;
-}
 
 #about .about-text {
     margin: 0 0 30px 0;
@@ -1044,7 +1041,7 @@ main .flex-fill {}
     footer .contact-title {
         margin: 0 0 30px 0;
         display: block;
-        font-weight: 400;
+        font-weight: bold;
         font-size: 1.5rem;
     }
 
@@ -1060,7 +1057,6 @@ main .flex-fill {}
         height: 40px;
         display: flex;
         justify-content: center;
-
     }
 
     footer ul {
@@ -1364,6 +1360,7 @@ main .flex-fill {}
 
     #about span {
         font-weight: bold;
+        font-size: 1.5;
     }
     /* -----VALUES------- */
 
@@ -1563,7 +1560,6 @@ main .flex-fill {}
     }
 
 
-
     /* -------------MAIN-------------------*/
 
     /* -----------------PROJECTS--------------*/
@@ -1730,7 +1726,7 @@ main .flex-fill {}
 
     .skill {
         width: 30%;
-    }
+        }
 
     #skills h4 {
         font-weight: bold;

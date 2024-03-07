@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="es">
 
 
 
@@ -11,9 +11,10 @@
   <link rel="stylesheet" href="../css/normalize.css" />
   <link rel="stylesheet" href="../css/styles.css">
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="../js/App.js" defer></script>
-  <script src="https://kit.fontawesome.com/2b91a49c97.js" crossorigin="anonymous"></script> 
+  <script src="https://kit.fontawesome.com/2b91a49c97.js" crossorigin="anonymous"></script>
+
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -41,37 +42,37 @@
 
 <!-- HEADER -->
 
-<body class="complex">
-  <header>
+<body>
+  <header class="complex">
     <div class="content-wrapper">
 
-      <!-- Top Navigation Menu -->
       <div class="topnav">
         <div class="languages">
-          <a href="../index.html" class="active">EN</a>
-          <a href="../German/index.html" class="active">DE</a>
-          <button onclick="myFunction()">Claro</button>
+          <a href="./Spanish/index.html" class="active">ES</a>
+          <a href="./German/index.html" class="active">DE</a>
+          <a href="./English-accessible\index.html" class="active">Plain</a>
         </div>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-          <a href="#work">Proyectos</a>
-          <a href="#skills">Competencias</a>
-          <a href="#about">Sobre mí</a>
-          <a href="#">Mis valores</a>
-          <a href="#contact">Contáctame</a>
+          <a href="#work">Mis proyectos</a>
+          <a href="#skills">Mis habilidades</a>
+          <a href="#about">Sobre mi</a>
+          <a href="#contact">Mi contacto</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"> <span class="menu"> Menú </span> </i>
+          <i class="fa fa-bars"> <span class="menu"> Menu </span> </i>
         </a>
       </div>
-    
+
+      <!-------- HOME TITLE ----------------->
+
       <div class="home-title">
         <h1>
           Hola! Soy Sarah Heinzkyll.
         </h1>
         <h2>
-          Desarrolladora Front End
+          Desarolladora Front End
         </h2>
         <div class="i-title">
           <div class="i-title-wrapper">
@@ -79,17 +80,17 @@
               Transparencia
             </div>
             <div class="i-title-item">
-            Compartir Saberes
+              Compartir saberes
             </div>
             <div class="i-title-item">
-              Accesibilidad
+              Accessibilidad
             </div>
             <div class="i-title-item">
               Communidad
             </div>
             <div class="i-title-item">
               <p>Felicidad</p>
-              <img class="i-title-planet" src="../img/planet.png" alt="planet">
+              <img class="i-title-planet" src="./img/planet.png" alt="planet">
               <p>Cuir</p>
             </div>
           </div>
@@ -110,7 +111,7 @@
         <!-- Projects and Descriptions -->
         <div class="content-wrapper">
 
-          <h3 class="portfolio-header">Proyectos</h3>
+          <h3 class="portfolio-header">Mis proyectos</h3>
 
           <!-- List of all the projects -->
           <div class="portfolio-wrapper">
@@ -119,44 +120,26 @@
                 <a href="https://sarahheinz.github.io/Guess-the-Word-Game/" target="_blank"><img
                     src="../img/guess-the-word2.png" alt="Guess the Word Game"></a>
               </figure>
-              <h4>Adivina la palabra (Juego)</h4>
+              <h4>"Adivina la Palabra"-Juego</h4>
               <p class="project-description">
-                It’s a game, written with Javascript, in which the players guess one letter each round until they
-                can guess the hidden word. If the player guesses all the letters correctly before they use up their
-                allotted guesses, they win! Find it on GitHub.
+                En este proyecto he usado JavaScript para crear un juego. Se puede adivinar una letra cada turno hasta
+                qué
+                adivina la palabra escondida. Se puede adiviniar maximo 7 veces. Si adivinas la palabra correcta ganas.
+                Puede jugarlo en mi página de GitHub. Disfruten!
               </p>
               <p>
-                <span>Competencias:</span>
+                <span>Habilidades:</span>
                 "Vanilla Javascript, Manipulate the DOM"
               </p>
               <p class="flex-fill">
                 <span>Herramientas:</span>
                 "Visual Studio Code, GitHub"
               </p>
-              <a class="project-link" href="https://sarahheinz.github.io/Guess-the-Word-Game/" target="_blank">página live</a>
+              <a class="project-link" href="https://sarahheinz.github.io/Guess-the-Word-Game/" target="_blank">página en
+                directo</a>
             </div>
 
-            <div class="portfolio-project">
-              <figure>
-                <a href="https://github.com/SarahHeinz/Github_Repo_Gallery" target="_blank"><img
-                    src="../img/repo-gallery2.png" alt="GitHub Repo Gallery"></a>
-              </figure>
-              <h4>GitHub Repo Gallery</h4>
-              <p class="project-description">
-                My project uses Javascript and APIs to create a gallery of repos by pulling data from my GitHub
-                page.
-                A click on the repos permits you to get more information about each repo. It can be accessed on
-                GitHub.</p>
-              <p>
-                <span>Competencias:</span>
-                "Javascript, APIs, Manipulate the DOM"
-              </p>
-              <p class="flex-fill">
-                <span>Herramientas:</span>
-                "Visual Studio Code, GitHub"
-              </p>
-              <a class="project-link" href="https://github.com/SarahHeinz/Github_Repo_Gallery" target="_blank">página live</a>
-            </div>
+
 
             <div class="portfolio-project">
               <figure>
@@ -165,38 +148,22 @@
               </figure>
               <h4>Unplugged Website</h4>
               <p class="project-description">
-                This project is a 3-page responsive website programmed with CSS3 and HTML5, that was built from a
-                photoshop design comp, that adapts to mobile, tablet, and desktop screens.</p>
+                Programé con CSS3 y HTML5 una página web para un retiro. La página contiene 3 páginas: primero la página
+                principal, segundo una página con informaciones adicionales y tercero una con las preguntas frecuentes.
+                I used CSS3 and HTML5 to write a website for a retreat. The website has 3 pages. First there is the main
+                La página es "responsive". Eso significa qué se ve igual de genial en el móvil, cómo en el tablet y el
+                ordenador.
+              </p>
               <p>
-                <span>Competencias:</span>
+                <span>Habilidades:</span>
                 "CSS3, Flexbox, HTML5, Media Queries, Responsive Typography"
               </p>
               <p class="flex-fill">
                 <span>Herramientas:</span>
                 "Visual Studio Code, GitHub, Text Editor, Photoshop"
               </p>
-              <a class="project-link" href="https://github.com/SarahHeinz/unplugged-website" target="_blank">página live</a>
-            </div>
-
-
-            <div class="portfolio-project">
-              <figure>
-                <a href="https://codesandbox.io/p/sandbox/sticky-notes-final-vy958y" target="_blank"><img
-                    src="../img/sticky-notes2.png" alt="Sticky Notes App"></a>
-              </figure>
-              <h4>Notas adhesivas-App</h4>
-              <p class="project-description">This interactive React app allows users to create their own “sticky
-                notes” as well as edit and delete them and search their to-do list items.</p>
-              <p>
-                <span>Competencias:</span>
-                "ES6, JSX, Managing data flow, Manipulating the DOM"
-              </p>
-              <p class="flex-fill">
-                <span>Herramientas:</span>
-                "CodeSandbox"
-              </p>
-              <a class="project-link" href="https://codesandbox.io/p/sandbox/sticky-notes-final-vy958y"
-                target="_blank">página live</a>
+              <a class="project-link" href="https://github.com/SarahHeinz/unplugged-website" target="_blank">live page
+              </a>
             </div>
 
             <div class="portfolio-project">
@@ -204,11 +171,15 @@
                 <a href="https://codesandbox.io/p/sandbox/name-tag-generator-f6wt3x" target="_blank"><img
                     src="../img/name-tag-generator2.png" alt="Name Tag Generator"></a>
               </figure>
-              <h4>Generador de etiquetas de nombre</h4>
-              <p class="project-description">Using JSX, functional components and ES6 modules, I built a name tag
-                generator to create fast and easy name tags for your whole team.</p>
+              <h4>"Name Tag"-Generator</h4>
+              <p class="project-description">
+                Con este Generador puede preparar Su próxima reuníon facilmente. Coga Su lista de nombres y
+                introdúzcalos en el campo de entrada. Ya tendrá etiquetas con el nombre de todo el mundo en un
+                segundo.
+                He utilizado JSX, functional components y módulos de ES6 para crearlo.
+              </p>
               <p>
-                <span>Competencias:</span>
+                <span>Habilidades:</span>
                 "ES6, JSX, Managing data flow"
               </p>
               <p class="flex-fill">
@@ -216,8 +187,58 @@
                 "CodeSandbox"
               </p>
               <a class="project-link" href="https://codesandbox.io/p/sandbox/name-tag-generator-f6wt3x"
-                target="_blank">página live</a>
+                target="_blank">página en directo</a>
 
+            </div>
+
+            <div class="portfolio-project">
+              <figure>
+                <a href="https://codesandbox.io/p/sandbox/sticky-notes-final-vy958y" target="_blank"><img
+                    src="../img/sticky-notes2.png" alt="Sticky Notes App"></a>
+              </figure>
+              <h4>Aplicación de notas adhesivas</h4>
+              <p class="project-description">
+                Con esta aplicación puede escribir Sus notas adhesivas de manera virtual. Cometiste un error? Sin
+                problema! Terminaste una tarea? Felicidades! En la aplicación puede editar y borrar las notas cómo
+                quiere. Tambien se puede buscar palabras claves.
+                Está programado con React.jsx.
+              </p>
+              <p>
+                <span>Habilidades:</span>
+                "ES6, JSX, Managing data flow, Manipulating the DOM"
+              </p>
+              <p class="flex-fill">
+                <span>Herramientas:</span>
+                "CodeSandbox"
+              </p>
+              <a class="project-link" href="https://codesandbox.io/p/sandbox/sticky-notes-final-vy958y"
+                target="_blank">live page </a>
+            </div>
+
+            <div class="portfolio-project">
+              <figure>
+                <a href="https://github.com/SarahHeinz/Github_Repo_Gallery" target="_blank"><img
+                    src="../img/repo-gallery2.png" alt="GitHub Repo Gallery"></a>
+              </figure>
+              <h4>Galeria de Repos de GitHub </h4>
+              <p class="project-description">
+                He utilizado JavaScript y APIs (interfaz de programación de aplicaciones) para crear una galeria de
+                repositorios.
+                En un repositorio puede guardar Su codigo, Sus carpetas y la historia de cambios de Su
+                codigo. Toda está informacion se guarda en la nube de GitHub.
+                Cuando hace clic en cualquier repositorio en la galeria ña API contecta las dos aplicaciones
+                y extrae los datos. Así puede ver más informacion sobre el repositorio.
+              </p>
+              <p>
+                <span>Habilidades:</span>
+                "JavaScript, APIs, Manipulación del DOM"
+              </p>
+              <p class="flex-fill">
+                <span>Herramientas:</span>
+                "Visual Studio Code, GitHub"
+              </p>
+              <a class="project-link" href="https://github.com/SarahHeinz/Github_Repo_Gallery" target="_blank">live page
+              </a>
             </div>
           </div>
         </div>
@@ -227,10 +248,10 @@
       <section id="skills">
         <!-- /* Developer Skills & Tech Stack */ -->
         <div class="content-wrapper">
-          <h3 class="skills-header">Skills</h3>
-          <h4>Developer Skills</h4>
+          <h3 class="skills-header">Mis habilidades</h3>
+          <h4>Habilidades de desarollo frontend</h4>
           <div class="skill-wrapper">
-            <p class="skill"> CSS3 </p>
+            <p class="skill">CSS3</p>
             <p class="skill">HTML5</p>
             <p class="skill">APIs</p>
             <p class="skill">Javascript (ES6) </p>
@@ -252,26 +273,26 @@
       <div class="content-wrapper">
         <div class="about-content-wrapper">
           <figure>
-            <img id="profile-image" src="../img/about-me5.jpg" alt="profile-image">
+            <img id="profile-image" src="../img/about-me7.jpg" alt="profile-image">
           </figure>
           <div class="about-info">
-            <h3>Hola! I am Sarah Heinzkyll.</h3>
-            <h4>I am a front end Developer...</h4>
-
+            <h3>Hola! Soy Sarah Heinzkyll.</h3>
+            <h4>Me encanta crear sitios web y aplicaciones accesibles y fáciles de usar para los proyectos qué le
+              apasionan y Sus utopías sociales.</h4>
             <p class="about-text">
-              Since I was a kid I enjoyed using computers, experimenting with them and learning about all the things
-              they can do. I did not yet find out about programming and then studied sth which I am passionate about
-              which is anti-discrimination and anti-violence work/ justice. Through free code camp and skillcrush I
-              got in touch with my interest in programming and now would love to combine my passions to create
-              accessible and user-friendly websites for companies, NGO´s and grass-root movements as well as artisans
-              to support them in spreading their messages and/ or products.
+              Cuando era una niña, me gustaba jugar con el ordenador. Me maravillaban todas sus posibilidades.
+              Luego mi camino me llevó hacia otros intereses míos. Durante años trabajé en organizaciones que
+              movilizan contra la discriminación y por más justicia social. También quieren apoyar a los supervivientes
+              de las violencias. Ese trabajo era con jóvenes y adultos en Berlín.
+              En 2019 me mudé a un pequeño pueblo de España. Aquí he retomado mi interés por las tecnologías.
+              ¿tiene grandes ideas? ¿Necesita un sitio web o una aplicación para hacerlas realidad? Estoy encantada de
+              ayudar a Su empresa, ONG o movimiento de base a difundir Su mensaje en el mundo virtual. También me encanta
+              trabajar con artesanes creatives ayudandole a visibilizar Sus artes en el internet.
             </p>
             <p>
-              <span>Glad to hear from you!/ visibilize your ideas on the web!</span>
+              <span>Cuéntame de tus ideas y sueños. Hagámoslas realidad!</span>
             </p>
-
           </div>
-
         </div>
       </div>
     </section>
@@ -285,19 +306,19 @@
   <footer id="contact">
     <div class="content-wrapper">
 
-      <h3>Looking forward to hearing from you!</h3>
+      <h3>Me alegra saber de Usted!</h3>
       <div class="contact-wrapper">
         <div class="contact-info">
           <!-- Contact data -->
-          <h5 class="contact-title">Get in touch</h5>
-          <a href=mailto:"sarah.heinzkyll@protonmail.com">
+          <h5 class="contact-title">Escríbeme</h5>
+          <a href=mailto:sarah.heinzkyll@protonmail.com>
             <i class="fa-solid fa-envelope"></i>
-           </a>
+          </a>
         </div>
 
         <div class="contact-info-follow">
           <!-- Social Media  -->
-          <h5 class="contact-title">Follow me</h5>
+          <h5 class="contact-title">Redes sociales</h5>
           <ul class="social-icons">
             <li>
               <a href="https://www.linkedin.com/in/sarah-heinzkyll-b2b3882b1/" target="_blank">
@@ -313,15 +334,16 @@
         </div>
 
 
-        <div class="contact-info">
-          <!-- Contact location -->
-          <h5 class="contact-title">Let's meet up?</h5>
-          <p>Sierra de Gredos, Spain</p>
-        </div>
+        <!-- <div class="contact-info"> -->
+        <!-- Contact location -->
+        <!-- <h5 class="contact-title">Based in:</h5>
+          <p> Sierra de Gredos, Spain. <br> But in movement.</p>
+        </div> -->
+
       </div>
 
       <div class="copyright">
-        <p> Copyright</p>
+        <p>Derechos de autora</p>
         <p>
           <script>document.write(newDate().getFullYear())</script>
           2024 | Sarah Heinzkyll

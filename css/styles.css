@@ -319,7 +319,6 @@ footer {
     border-radius: 30px;
 }
 
-footer #contact {}
 
 footer .content-wrapper {
     width: 90%;
@@ -1029,7 +1028,7 @@ main .flex-fill {}
     footer .contact-title {
         margin: 0 0 30px 0;
         display: block;
-        font-weight: 400;
+        font-weight: bold;
         font-size: 1.5rem;
     }
 
@@ -1095,7 +1094,6 @@ main .flex-fill {}
         font-size: 3rem;
         text-align: center;
         font-family: "PP Hatton Medium";
-
     }
 
 
@@ -1128,7 +1126,6 @@ main .flex-fill {}
         margin: 20px 0 40px 0;
         text-align: center;
         filter: drop-shadow(1px 2px 6px blue);
-
     }
 
     .portfolio-project img {
@@ -1248,7 +1245,6 @@ main .flex-fill {}
 
     #skills .skill {
         width: 45%;
-
     }
 
     #skills h4 {
@@ -1374,6 +1370,7 @@ main .flex-fill {}
 
     #about span {
         font-weight: bold;
+        font-size: 1.5;
     }
 
 }
@@ -1470,7 +1467,6 @@ main .flex-fill {}
 
     .i-title-planet {
         display: inline;
-
         width: 5%;
         height: auto;
 
@@ -1561,7 +1557,6 @@ main .flex-fill {}
         line-height: 1.5;
         text-align: center;
     }
-
 
 
     /* -------------MAIN-------------------*/
@@ -1738,7 +1733,6 @@ main .flex-fill {}
 
     .skill {
         width: 30%;
-
     }
 
     #skills h4 {
@@ -1868,5 +1862,5 @@ main .flex-fill {}
         margin: 20px 0;
 font-size: 1.75rem;
 text-align: left;
-    }
+}
 }
