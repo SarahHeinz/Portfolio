@@ -1168,7 +1168,7 @@ main .flex-fill {}
 
     }
 
-    span {
+    #work span {
         font-weight: bold;
         font-size: 1.25rem;
         line-height: 1.5;
@@ -1319,8 +1319,9 @@ main .flex-fill {}
     }
 
     #about figure {
-        width: 50%;
-        margin: 20px 0 40px 0;
+        width: 45%;
+        margin: 0;
+        align-self: normal;
     }
 
     #profile-image {
@@ -1332,6 +1333,13 @@ main .flex-fill {}
     #about .about-info {
         align-items: center;
     }
+    #about .about-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 100%;
+    }
 
     #about h3 {
         margin: 80px 0;
@@ -1342,25 +1350,26 @@ main .flex-fill {}
         text-align: center;
     }
 
-    #about h4 {
+    #about .about-info h4 {
         font-weight: bold;
         line-height: 1.5;
-        margin: 0 0 60px 0;
+        margin: 0 0 30px 0;
         text-align: center;
     }
 
 
-    #about p {
+    #about .about-text {
         font-size: 1.25rem;
         line-height: 1.5;
         text-align: left;
-        margin: 0 0 30px 0;
-        width: 100%;
+        margin: 0 0 30px 15px;
+        width: 53%;
     }
 
     #about span {
         font-weight: bold;
-        font-size: 1.5;
+        font-size: 1.5rem;
+        width: 100%;
     }
     /* -----VALUES------- */
 
@@ -1560,6 +1569,7 @@ main .flex-fill {}
     }
 
 
+
     /* -------------MAIN-------------------*/
 
     /* -----------------PROJECTS--------------*/
@@ -1649,7 +1659,7 @@ main .flex-fill {}
         line-height: 1.5;
     }
 
-    span {
+    #work span {
         font-weight: bold;
         font-size: 1.25rem;
         line-height: 1.5;
@@ -1668,8 +1678,7 @@ main .flex-fill {}
         border-radius: 30px;
     }
 
-    main .flex-fill {}
-
+ 
 
     /* --------------SKILLS -----------*/
     #skills {
@@ -1726,7 +1735,7 @@ main .flex-fill {}
 
     .skill {
         width: 30%;
-        }
+    }
 
     #skills h4 {
         font-weight: bold;
@@ -1795,8 +1804,9 @@ main .flex-fill {}
     }
 
     #about figure {
-        width: 50%;
-        margin-top: 40px;
+        width: 45%;
+        margin: 0;
+        align-self: center;
     }
 
     #profile-image {
@@ -1808,7 +1818,15 @@ main .flex-fill {}
 
 
     #about .about-info {
-        width: 50%;
+        width: 100%;
+    }
+
+    #about .about-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 100%;
     }
 
     #about .about-info h3 {
@@ -1823,26 +1841,28 @@ main .flex-fill {}
     #about .about-info h4 {
         font-weight: bold;
         line-height: 1.5;
-        margin: 20px 0;
+        margin: 35px 0;
         width: 100%;
         text-align: left;
         font-size: 2rem;
     }
 
 
-    #about p {
-        line-height: 1.5;
-        text-align: left;
-        margin: 0;
-        width: 85%;
-    }
+
     #about .about-text {
+        line-height: 1.5;
         margin: 0 0 30px 0;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+        text-align: left;
+        margin-left: 15px;
+        margin-bottom: 40px;
+        width: 53%;
     }
-    #about span {
+
+    #about .about-info span {
         font-weight: bold;
-        margin: 20px 0;
+        font-size: 1.75rem;
+        margin: 35px 0;
     }
 
         /* -----VALUES------- */

@@ -188,53 +188,53 @@ header .content-wrapper {
     font-weight: bold;
     margin-bottom: 70px;
     text-align: left;
-  }
-  
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
+}
+
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
     display: none;
-  }
-  
-  /* Style navigation menu links */
-  .topnav a {
-  color:  #351D77;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: #351D77;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 1.2rem;
     display: block;
     text-align: center;
     background-color: rgb(67, 228, 228);
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background:  #fffb02;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: #fffb02;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
     margin-right: 5px;
     border-radius: 10px;
-  }
-  
-  
-  
-  /* Style the active link (or home/logo) */
-  .active {
+}
+
+
+
+/* Style the active link (or home/logo) */
+.active {
     background-color: #04AA6D;
     color: white;
-  }
-  
-  .languages a {
+}
+
+.languages a {
     display: inline-block;
     border-radius: 35px;
-  }
-  
-  .menu {
+}
+
+.menu {
     font-family: 'Open-Dyslexic', sans-serif;
     font-weight: bold;
-  }
+}
 
 
 header .home-title {
@@ -420,7 +420,7 @@ footer .copyright {
     justify-content: center;
     text-align: center;
     width: 100%;
-   padding: 50px 0;
+    padding: 50px 0;
     background: hsla(326, 46%, 75%, 0.2);
     border-radius: 30px;
 }
@@ -441,7 +441,7 @@ main .content-wrapper {
     width: 100%;
     text-align: center;
     font-family: "PP Hatton Medium";
-font-size: 2rem;
+    font-size: 2rem;
 }
 
 
@@ -668,6 +668,7 @@ main .flex-fill {}
     border-style: none;
     /* margin: 0; */
 }
+
 #about .about-info h4 {
     font-weight: bold;
     line-height: 1.5;
@@ -1159,7 +1160,7 @@ main .flex-fill {}
 
     }
 
-    span {
+    #work span {
         font-weight: bold;
         font-size: 1.25rem;
         line-height: 1.5;
@@ -1329,8 +1330,9 @@ main .flex-fill {}
     }
 
     #about figure {
-        width: 50%;
-        margin: 20px 0 40px 0;
+        width: 45%;
+        margin: 0;
+        align-self: normal;
     }
 
     #profile-image {
@@ -1343,6 +1345,14 @@ main .flex-fill {}
         align-items: center;
     }
 
+    #about .about-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
     #about h3 {
         margin: 80px 0;
         font-size: 3rem;
@@ -1352,25 +1362,26 @@ main .flex-fill {}
         text-align: center;
     }
 
-    #about h4 {
+    #about .about-info h4 {
         font-weight: bold;
         line-height: 1.5;
-        margin: 0 0 60px 0;
+        margin: 0 0 30px 0;
         text-align: center;
     }
 
 
-    #about p {
+    #about .about-text {
         font-size: 1.25rem;
         line-height: 1.5;
         text-align: left;
-        margin: 0 0 30px 0;
-        width: 100%;
+        margin: 0 0 30px 15px;
+        width: 53%;
     }
 
     #about span {
         font-weight: bold;
-        font-size: 1.5;
+        font-size: 1.5rem;
+        width: 100%;
     }
 
 }
@@ -1483,7 +1494,7 @@ main .flex-fill {}
         justify-content: center;
         align-items: center;
         flex-flow: row nowrap;
-        padding: 140px 0 140px 0;
+        padding: 100px 0 100px 0;
         border-radius: 30px;
     }
 
@@ -1651,7 +1662,7 @@ main .flex-fill {}
         line-height: 1.5;
     }
 
-    span {
+    #work span {
         font-weight: bold;
         font-size: 1.25rem;
         line-height: 1.5;
@@ -1673,7 +1684,6 @@ main .flex-fill {}
         border-radius: 30px;
     }
 
-    main .flex-fill {}
 
 
     /* --------------SKILLS -----------*/
@@ -1790,7 +1800,8 @@ main .flex-fill {}
         align-items: center;
         flex-flow: row wrap;
     }
-/* 
+
+    /* 
     #about:hover {
         background: hsla(350, 50%, 50%, 0.9);
         color: blue;
@@ -1810,19 +1821,26 @@ main .flex-fill {}
     }
 
     #about figure {
-        width: 50%;
+        width: 45%;
+        margin: 0;
+        align-self: center;
     }
 
     #profile-image {
         width: 90%;
-        vertical-align: middle;
         border-style: none;
     }
 
-
-
     #about .about-info {
-        width: 50%;
+        width: 100%;
+    }
+
+    #about .about-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 100%;
     }
 
     #about .about-info h3 {
@@ -1837,30 +1855,26 @@ main .flex-fill {}
     #about .about-info h4 {
         font-weight: bold;
         line-height: 1.5;
-        margin: 20px 0;
+        margin: 35px 0;
         width: 100%;
         text-align: left;
         font-size: 1.75rem;
     }
 
 
-    #about p {
-        line-height: 1.5;
-        text-align: left;
-        margin: 0;
-        width: 85%;
-        font-size: 1.5rem;
-    }
-
     #about .about-text {
+        line-height: 1.5;
         margin: 0 0 30px 0;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+        text-align: left;
+        margin-left: 15px;
+        margin-bottom: 40px;
+        width: 53%;
     }
 
-    #about span {
+    #about .about-info span {
         font-weight: bold;
-        margin: 20px 0;
-font-size: 1.75rem;
-text-align: left;
-}
+        font-size: 1.75rem;
+        margin: 35px 0;
+    }
 }
