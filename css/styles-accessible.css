@@ -517,8 +517,6 @@ main .flex-fill {}
     text-align: center;
 }
 
-
-
 .skill-wrapper {
     display: flex;
     justify-content: space-evenly;
@@ -541,9 +539,6 @@ main .flex-fill {}
     font-weight: bold;
 }
 
-
-
-
 #skills h4 {
     font-weight: bold;
     line-height: 1.5;
@@ -563,7 +558,6 @@ main .flex-fill {}
     text-transform: uppercase;
     text-align: center;
 }
-
 
 .tool-wrapper p {
     font-size: 1rem;
@@ -595,7 +589,7 @@ main .flex-fill {}
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
-    padding: 60px 0; 
+    padding: 60px 0;
     border-radius: 30px;
     border: #2b2c2c 3px solid;
     background-color: #eae4dd;
@@ -622,6 +616,7 @@ main .flex-fill {}
     /* vertical-align: middle; */
     border-style: none;
 }
+
 #about .about-info h4 {
     font-weight: bold;
     line-height: 1.5;
@@ -718,14 +713,6 @@ main .flex-fill {}
     color: #eae4dd;
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -984,11 +971,8 @@ main .flex-fill {}
     }
 
     .i-title-planet {
-
-
         width: 8%;
         height: auto;
-
     }
 
 
@@ -1070,10 +1054,9 @@ main .flex-fill {}
         line-height: 1.5;
     }
 
-    .final-image {
-        height: 30%;
-        width: 100%;
-    }
+    footer .fa-solid {
+        margin-top: 20px;}
+
 
     /* -------------MAIN-------------------*/
 
@@ -1225,7 +1208,6 @@ main .flex-fill {}
     }
 
 
-
     .skill-wrapper {
         display: flex;
         justify-content: space-evenly;
@@ -1294,7 +1276,6 @@ main .flex-fill {}
     /* -------------ABOUT ---------*/
 
     #about {
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1333,6 +1314,7 @@ main .flex-fill {}
     #about .about-info {
         align-items: center;
     }
+
     #about .about-wrapper {
         display: flex;
         justify-content: space-evenly;
@@ -1363,7 +1345,6 @@ main .flex-fill {}
         line-height: 1.5;
         text-align: left;
         margin: 0 0 30px 15px;
-        width: 53%;
     }
 
     #about span {
@@ -1371,6 +1352,7 @@ main .flex-fill {}
         font-size: 1.5rem;
         width: 100%;
     }
+
     /* -----VALUES------- */
 
     #values {
@@ -1526,7 +1508,7 @@ main .flex-fill {}
     footer .contact-info {
         margin: 80px 0 80px 0;
         display: block;
-        width: 33%;
+        width: 40%;
     }
 
     footer .contact-info-follow {
@@ -1534,7 +1516,7 @@ main .flex-fill {}
         flex-flow: row wrap;
         justify-content: center;
         margin: 80px 0 80px 0;
-        width: 33%;
+        width: 40%;
     }
 
     footer .contact-title {
@@ -1567,8 +1549,8 @@ main .flex-fill {}
         line-height: 1.5;
         text-align: center;
     }
-
-
+    footer .fa-solid {
+        margin-top: 25px;}
 
     /* -------------MAIN-------------------*/
 
@@ -1678,7 +1660,7 @@ main .flex-fill {}
         border-radius: 30px;
     }
 
- 
+
 
     /* --------------SKILLS -----------*/
     #skills {
@@ -1711,8 +1693,6 @@ main .flex-fill {}
         margin: 0;
         text-align: center;
     }
-
-
 
     .skill-wrapper {
         display: flex;
@@ -1788,7 +1768,7 @@ main .flex-fill {}
         justify-content: center;
         align-items: center;
         flex-flow: row wrap;
-        }
+    }
 
     #about .content-wrapper {
         max-width: 1450px;
@@ -1805,13 +1785,12 @@ main .flex-fill {}
 
     #about figure {
         width: 45%;
-        margin: 0;
+        margin: 30px 0;
         align-self: center;
     }
 
     #profile-image {
         width: 90%;
-        vertical-align: middle;
         border-style: none;
     }
 
@@ -1831,7 +1810,7 @@ main .flex-fill {}
 
     #about .about-info h3 {
         margin: 0;
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: bold;
         line-height: 1.5;
         margin: 0;
@@ -1844,9 +1823,8 @@ main .flex-fill {}
         margin: 35px 0;
         width: 100%;
         text-align: left;
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
-
 
 
     #about .about-text {
@@ -1863,57 +1841,42 @@ main .flex-fill {}
         font-weight: bold;
         font-size: 1.75rem;
         margin: 35px 0;
+        width: 100%;
     }
 
-        /* -----VALUES------- */
+    /* -----VALUES------- */
 
-        #values {
-            padding: 100px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: row wrap;
-            width: 100%;
-            border-radius: 30px;
-        }
-    
-        #values .content-wrapper {
-            width: 85%;
-            display: block;
-            text-align: center;
-            margin: 50px 0;
-        }
+    #values {
+        padding: 100px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    #values .content-wrapper {
+        width: 85%;
+        display: block;
+        text-align: center;
+        margin: 50px 0;
+    }
+
     #values .values-header {
         margin-bottom: 40px;
     }
-/*      
-        .values-wrapper {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-flow: row wrap;
-            width: 100%;
-            text-align: center;
-        }
-     */
-        .values-wrapper p {
-            font-size: 1rem;
-            padding: 20px 0;
-            line-height: 1.5;
-            text-align: center;
-            margin: 20px 0;
-        }
-    
-        #values .value {
-            width: 30%;
-        }
-/*     
-        #values h4 {
-    
-            font-weight: bold;
-            line-height: 1.5;
-            margin: 20px 0;
-            width: 100%;
-            text-align: center;
-        } */
+
+    .values-wrapper p {
+        font-size: 1rem;
+        padding: 20px 0;
+        line-height: 1.5;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    #values .value {
+        width: 30%;
+    }
+
 }
